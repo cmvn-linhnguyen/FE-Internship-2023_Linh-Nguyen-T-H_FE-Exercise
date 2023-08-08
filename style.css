@@ -1,34 +1,21 @@
 .header {
     width: 100%;
-    max-width: 1152px;
-    position: absolute;
+    height: 80px;
+
+    position: fixed;
     z-index: 1;
-    justify-content: space-between;
-    align-items: center;
+
     background-color: transparent;
-    padding: 20px 0px;
-}
-
-.logo {
-    flex: 1;
-}
-
-.header-nav {
-    flex: 1;
-}
-
-.nav-list {
-    justify-content: space-between;
 }
 
 .nav-link {
-    color: #FBB03B;
-    font-weight: 700;
     font-size: 18px;
+    font-weight: 700;
+
+    color: #FBB03B;
 }
 
 .nav-icon-list {
-    flex: 1;
     justify-content: flex-end;
 }
 
@@ -36,35 +23,45 @@
     margin-left: 20px;
 }
 
+.section {
+    margin-bottom: 48px;
+}
+
 .section-title {
+    margin-bottom: 24px;
+
     font-size: 32px;
     font-weight: 300;
 }
 
 .section-banner {
-    position: relative;
     width: 100%;
     height: 100vh;
+
+    position: relative;
     top: 0;
     left: 0;
+
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("./assets/images/eshop-banner.png");
     background-size: cover;
-    box-shadow: inset 0 0 0 2000px rgba(5, 5, 5, 0.3);
 }
 
 .banner-title {
-    font-size: 52px;
-    font-weight: 700px;
-    max-width: 400px;
     margin-left: 70px;
     padding-top: 20vh;
-    color: white;
     margin-bottom: 10px;
+
+    max-width: 400px;
+
+    font-size: 52px;
+    font-weight: 700px;
+
+    color: white;
 }
 
 .shop-now-link {
-    align-items: center;
     margin-left: 70px;
+    align-items: center;
 }
 
 .shop-now-icon-wrapper {
@@ -79,34 +76,41 @@
 }
 
 .shop-now-title {
+    font-size: 24;
+    font-weight: 700;
+    line-height: 36px;
     text-decoration: underline;
+
     color: white;
 }
 
 .banner-offers-list {
+    padding: 20px 20px 20px 140px;
+
     position: absolute;
     left: 0;
     bottom: 0;
-    background-color: white;
-    padding: 20px 20px 20px 100px;
+    z-index: 1;
+
     border-top-right-radius: 50px;
+
+    background-color: white;
 }
 
 .banner-offer-item {
-    display: flex;
-    margin: 0px 10px;
-    max-width: 250px;
+    margin-right: 20px;
 }
 
 .banner-offer-icon-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #FFF3DF;
+    margin-right: 10px;
+
+    box-sizing: content-box;
+
     width: 36px;
     height: 36px;
+
+    background-color: #FFF3DF;
     border-radius: 10px;
-    margin-right: 10px;
 }
 
 .banner-offer-title {
@@ -120,65 +124,44 @@
 }
 
 .category-list {
-    width: 100%;
     flex-wrap: wrap;
-    margin: 48px -10px;
-    height: 360px;
-}
-
-.category-link {
-    background-color: white;
+    margin: 0px -10px;
 }
 
 .category-item {
-    margin: 0px 10px;
-    padding-left: 30px;
+    width: 100%;
+    height: 360px;
+
     position: relative;
 }
 
 .category-title {
+    margin: 140px 0px 40px 30px;
+
     font-size: 24px;
     font-weight: 400;
-    margin-top: 150px;
-    margin-bottom: 30px;
+
     color: white;
+}
+
+.category-link {
+    background-color: white;
+    margin-left: 30px;
 }
 
 .new-arrivals {
-    flex: 2;
     background-image: url("./assets/images/new-arrivals.png");
     background-size: cover;
-
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Overlay color with transparency */
-    color: white;
-    /* Text color on the overlay */
-    padding: 20px;
-    box-sizing: border-box;
 }
 
 .tshirt-summer {
-    flex: 1;
     background-image: url("./assets/images/basic-tshirt.png");
     background-size: cover;
 }
 
 .summer-sale {
-    flex: 1;
     background-image: url("./assets/images/summer-sale.png");
     background-size: cover;
-}
-
-.recommendation-header {
-    justify-content: space-between;
 }
 
 .recommendation-link {
@@ -186,16 +169,15 @@
 }
 
 .product-list {
-    width: 100%;
-    flex-wrap: wrap;
-    margin: 48px -10px;
-    justify-content: space-between;
+    margin: 0 -10px;
 }
 
 .product-item {
-    width: 250px;
-    margin: 0px 10px;
     position: relative;
+}
+
+.product-image {
+    width: 100%;
 }
 
 .product-discount {
@@ -211,12 +193,8 @@
 .product-name {
     font-size: 16px;
     font-weight: 300;
-    color: #333333;
-}
 
-.product-price-group {
-    display: flex;
-    justify-content: space-between;
+    color: #333333;
 }
 
 .product-price {
@@ -233,72 +211,66 @@
 }
 
 .section-services {
+    padding: 24px;
+
     background-color: #F6F6F6;
-    padding: 48px 0px;
 }
 
-.services {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.services-list {
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.services-item {
-    display: flex;
+.services-item-link {
     justify-content: flex-start;
+    width: 100%;
 }
 
 .services-icon-wrapper {
+    margin-bottom: 24px;
+
     width: 68px;
     height: 68px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     border-radius: 20px;
     background-color: white;
 }
 
 .services-title {
-    margin: 10px 0px;
-}
+    margin-bottom: 16px;
 
-.products-today {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 48px 0px;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .section-newsletter {
-    background-image: url("./assets/images/newsletter.png");
-    position: relative;
+    margin-bottom: 0px;
+
     height: 240px;
+
+    position: relative;
+
+    background-image: url("./assets/images/newsletter.png");
 }
 
 .newsletter {
     height: 100%;
-    display: flex;
-    align-items: center;
-    color: white;
 }
 
 .newsletter-title {
+    max-width: 490px;
+
     font-weight: 400;
     font-size: 24px;
-    max-width: 490px;
+
+    color: white;
 }
 
 .subscribe-input {
     padding: 10px 20px;
-    background-color: white;
+    margin-right: 30px;
+
     width: 350px;
+
     border: none;
     border-radius: 20px;
+
+    background-color: white;
 }
 
 .subscribe-button {
@@ -308,48 +280,53 @@
 
 .footer {
     background-color: #FBB03B;
+
+    color: white;
 }
 
 .infor-shop {
-    padding: 30px;
-    border-bottom: 1px solid white;
+    padding: 32px 0px;
+
+    justify-content: space-between;
 }
 
-.infor-shop-detail {
-    width: 35%;
+.infor-shop-detail{
+    width: 40%;
 }
 
 .shop-description {
+    margin: 16px 0px;
+
     font-size: 14px;
     font-weight: 400;
-    color: white;
-    margin: 20px;
 }
 
 .socical-item {
-    margin: 0px 10px;
+    margin-right: 20px;
 }
 
 .infor-shop-group-list {
-    width: 60%;
-    justify-content: space-around;
+    width: 55%;
+    justify-content: space-between;
 }
 
 .infor-shop-title {
     font-weight: 700;
     font-size: 16px;
-    color: white;
+
+    
 }
 
 .infor-shop-item,
 .infor-shop-link {
     font-weight: 400;
     font-size: 14px;
-    color: white;
+
+color: white;
 }
 
 .copyright {
-    justify-content: center;
-    padding: 30px;
-    color: white;
+    height: 80px;
+
+    border-top: 1px solid white;
 }
