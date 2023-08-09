@@ -2,10 +2,15 @@ header {
   width: 100%;
   padding-top: 48px;
 
+
   position: fixed;
   z-index: 1;
 
   background-color: transparent;
+}
+
+.header-sm {
+  display: none;
 }
 
 .nav-link {
@@ -29,9 +34,11 @@ header {
   padding: 48px 0px;
 }
 
-.section-title {
+.section-header {
   margin-bottom: 40px;
+}
 
+.section-title {
   font-size: 32px;
   font-weight: 300;
 }
@@ -47,6 +54,7 @@ header {
   position: relative;
 
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("./assets/images/eshop-banner.png");
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -271,6 +279,7 @@ header {
   position: relative;
 
   background-image: url("./assets/images/newsletter.png");
+  background-size: cover;
 }
 
 .newsletter {
@@ -285,7 +294,6 @@ header {
 }
 
 .subscribe-form {
-
   justify-content: space-between;
 }
 
@@ -293,7 +301,7 @@ header {
   padding: 10px 20px;
   margin-right: 30px;
 
-  width: 350px;
+  width: 75%;
 
   border: none;
   border-radius: 60px;
@@ -320,12 +328,9 @@ header {
   justify-content: space-between;
 }
 
-.infor-shop-detail {
-  width: 40%;
-}
-
 .shop-description {
-  margin: 16px 0px;
+  margin-top: 24px;
+  margin-bottom: 48px;
 
   font-size: 14px;
   font-weight: 400;
@@ -333,10 +338,6 @@ header {
 
 .socical-item {
   margin-right: 20px;
-}
-
-.infor-shop-group-list {
-  width: 55%;
 }
 
 .infor-shop-title {
@@ -362,28 +363,14 @@ header {
   border-top: 1px solid white;
 }
 
+.copyright p {
+  font-size: 12px;
+  font-weight: 400;
+}
+
 @media only screen and (max-width: 768px) {
-  .container{
+  .container {
     padding: 0px 24px;
-  }
-  .header {
-    display: none;
-  }
-
-  .section {
-    padding: 12px 0px;
-  }
-
-  .section-title {
-    font-size: 18px;
-    font-weight: 300;
-  }
-
-  .category-title {
-    font-size: 14px;
-    font-weight: 400;
-
-    left: 16px;
   }
 
   .btn {
@@ -393,35 +380,10 @@ header {
     font-weight: 700;
   }
 
-  .category-link {
-    left: 16px;
-  }
+  .badge {
+    padding: 3px 5px;
 
-  .header-mobile{
-    display: block;
-  }
-
-  .section-banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("./assets/images/mobile-banner.png");
-  }
-
-  .banner-infor-group {
-    padding-top: 30vh;
-    padding-left: 24px;
-  }
-
-  .banner-title {
-    font-size: 48px;
-  }
-
-  .banner-offers-list {
-    position: relative;
-    padding: 0;
-    display: none;
-  }
-
-  .category-item {
-    height: 224px;
+    font-size: 8px;
   }
 
   .col-sm-12 {
@@ -432,8 +394,169 @@ header {
     width: 50%;
   }
 
+  .row {
+    margin: -4px;
+  }
+
+  .col {
+    padding: 4px;
+  }
+
+
+  header {
+    background-color: #FFFFFF;
+    padding: 16px 0px;
+  }
+
+  .header-lg {
+    display: none;
+  }
+
+  .header-sm {
+    display: flex;
+    top: 0;
+    left: 0;
+  }
+
+  .section {
+    padding: 24px 0px;
+  }
+
+  .section-header {
+    margin-bottom: 16px;
+  }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .section-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("./assets/images/mobile-banner.png");
+    background-size: cover;
+  }
+
+  .banner-title {
+    font-size: 48px;
+  }
+
+  .banner-infor-group {
+    padding: 0;
+    padding-top: 45%;
+  }
+
+  .section-offers {
+    display: none;
+  }
+
+  .header-mobile {
+    display: block;
+  }
+
+  .category-item {
+    height: 224px;
+  }
+
+  .category-title {
+    font-size: 14px;
+    font-weight: 400;
+    top: 60%;
+    left: 16px;
+  }
+
+  .category-discount {
+    left: 16px;
+    top: 50%;
+  }
+
+  .category-link {
+    left: 16px;
+    bottom: 16px;
+  }
+
+  .product-name {
+    margin-top: 4px;
+    font-size: 12px;
+  }
+
+  .product-price {
+    font-size: 10px;
+    margin-bottom: 4px;
+  }
+
+  .product-discount {
+    top: 14px;
+    left: 9px;
+  }
+
   .product-image {
     height: 227px;
   }
 
+  .newsletter {
+    padding: 24px 0px;
+  }
+
+  .choose-us-title {
+    margin-bottom: 36px;
+  }
+
+  .services-item-link {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .services-title {
+    font-size: 12px;
+  }
+
+  .services-description {
+    font-size: 10px;
+  }
+
+  .services-icon-wrapper {
+    margin-right: 16px;
+    margin-bottom: 24px;
+  }
+
+  .services-detail {
+    max-width: 243px;
+  }
+
+  .section-newsletter {
+    background-image: url("./assets/images/mobile-newsletter.png");
+  }
+
+  .newsletter-title {
+    font-size: 14px;
+
+    max-width: 200px;
+    margin-bottom: 24px;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+  }
+
+  .subscribe-input {
+    width: 100%;
+
+    padding: 6px 12px;
+    margin-bottom: 16px;
+  }
+
+  .subscribe-button {
+    width: 120px;
+    padding: 7px 20px;
+  }
+
+  .socical-list {
+    display: none;
+  }
+
+  .infor-shop-item,
+  .infor-shop-link {
+    margin-bottom: 12px;
+    font-size: 12px;
+  }
 }

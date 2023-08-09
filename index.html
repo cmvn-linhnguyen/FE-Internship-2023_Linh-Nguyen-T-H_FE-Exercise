@@ -13,7 +13,7 @@
 <body>
   <header>
     <div class="container">
-      <div class="header flex-row flex-space-between row">
+      <div class="header-lg row">
         <h1 class="logo col col-4">
           <a class="logo-link" href="#"><img class="logo-image" src="assets/images/eshop-logo.png" alt="E-shop"></a>
         </h1>
@@ -36,6 +36,23 @@
           </li>
         </ul>
       </div>
+
+    <div class="header-sm row flex-center">
+      <h1 class="logo col col-sm-6">
+        <a class="logo-link" href="#"><img class="logo-image" src="assets/images/eshop-logo-black.png" alt="E-shop"></a>
+      </h1>
+      <ul class="nav-icon-list flex-row col col-sm-6">
+        <li class="nav-icon-item">
+          <a class="nav-icon-link" href="#"><img src="assets/icons/ic-cart-black.svg" alt="Cart Icon"></a>
+        </li>
+        <li class="nav-icon-item">
+          <a class="nav-icon-link" href="#"><img src="assets/icons/ic-avatar-black.svg" alt="Avatar Icon"></a>
+        </li>
+        <li class="nav-icon-item">
+          <a class="nav-icon-link" href="#"><img src="assets/icons/ic-menu-black.svg" alt="Menu Icon"></a>
+        </li>
+      </ul>
+    </div>
     </div>
   </header>
   <main>
@@ -122,9 +139,9 @@
         <ul class="product-list flex-row row">
           <li class="col-3 col col-sm-6">
             <div class="product-item">
-              <a class="product-link" href="#">
+              <a class="product-link flex-column" href="#">
                 <img class="product-image" src="./assets/images/tshirt-summer-vibes.png" alt="T-Shirt Summer Vibes">
-                <span class="badge badge-danger product-discount@">-50%</span>
+                <span class="badge badge-danger product-discount">-50%</span>
                 <h4 class="product-name">T-Shirt Summer Vibes</h4>
                 <div class="product-price-group flex-row flex-space-between">
                   <p class="product-price discount-price">$89.99</p>
@@ -135,7 +152,7 @@
           </li>
           <li class="col-3 col col-sm-6">
             <div class="product-item">
-              <a class="product-link" href="#">
+              <a class="product-link flex-column" href="#">
                 <img class="product-image" src="./assets/images/loose-knit-3-4-sleeve.png" alt="Loose Knit 3/4 Sleeve">
                 <h4 class="product-name">Loose Knit 3/4 Sleeve</h4>
                 <div class="product-price-group flex-space-between">
@@ -147,7 +164,7 @@
           </li>
           <li class="col-3 col col-sm-6">
             <div class="product-item">
-              <a class="product-link" href="#">
+              <a class="product-link flex-column" href="#">
                 <img class="product-image" src="./assets/images/basic-slim-fit-tshirt.png" alt="Basic Slim Fit T-Shirt">
                 <h4 class="product-name">Basic Slim Fit T-Shirt</h4>
                 <div class="product-price-group flex-row flex-space-between">
@@ -159,7 +176,7 @@
           </li>
           <li class="col-3 col col-sm-6">
             <div class="product-item">
-              <a class="product-link" href="#">
+              <a class="product-link flex-column" href="#">
                 <img class="product-image" src="./assets/images/loose-textured-tshirt.png" alt="Loose Textured T-Shirt">
                 <h4 class="product-name">Loose Textured T-Shirt</h4>
                 <div class="product-price-group flex-row flex-space-between">
@@ -174,9 +191,9 @@
     </section>
     <section class="section section-services flex-row">
       <div class="container">
-        <h3 class="section-title section-title-center">Why should you choose us?</h3>
+        <h3 class="section-header section-title section-title-center choose-us-title">Why should you choose us?</h3>
         <ul class="services-list row">
-          <li class="col-3 col">
+          <li class="col-3 col col-sm-12">
             <a class="services-item-link" href="#">
               <div class="services-icon-wrapper flex-row flex-center">
                 <img class="services-icon" src="assets/icons/ic-free-shipping.svg" alt="Free Shipping">
@@ -189,7 +206,7 @@
               </div>
             </a>
           </li>
-          <li class="col-3 col">
+          <li class="col-3 col col-sm-12">
             <a class="services-item-link" href="#">
               <div class="services-icon-wrapper flex-row flex-center">
                 <img class="services-icon" src="assets/icons/ic-payment.svg" alt="Easy Payments">
@@ -201,7 +218,7 @@
               </div>
             </a>
           </li>
-          <li class="col-3 col">
+          <li class="col-3 col col-sm-12">
             <a class="services-item-link" href="#">
               <div class="services-icon-wrapper flex-row flex-center">
                 <img class="services-icon" src="assets/icons/ic-guarantee.svg" alt="Money-Back Guarantee">
@@ -214,7 +231,7 @@
               </div>
             </a>
           </li>
-          <li class="col-3 col">
+          <li class="col-3 col col-sm-12">
             <a class="services-item-link" href="#">
               <div class="services-icon-wrapper flex-row flex-center">
                 <img class="services-icon" src="assets/icons/ic-materials.svg" alt="Finest Quality">
@@ -233,9 +250,9 @@
     <section class="section section-products-today">
       <div class="container">
         <div class="products-today flex-column">
-          <h3 class="section-title section-title-center">Products in today</h3>
+          <h3 class="section-header section-title section-title-center">Products in today</h3>
           <ul class="product-list flex-row row">
-            <li class="col-3 col">
+            <li class="col-3 col col-sm-6">
               <div class="product-item">
                 <a class="product-link" href="#">
                   <img class="product-image" src="./assets/images/tshirt-summer-vibes.png" alt="T-Shirt Summer Vibes">
@@ -248,7 +265,7 @@
                 </a>
               </div>
             </li>
-            <li class="col-3 col">
+            <li class="col-3 col col-sm-6">
               <div class="product-item">
                 <a class="product-link" href="#">
                   <img class="product-image" src="./assets/images/loose-knit-3-4-sleeve.png"
@@ -261,7 +278,7 @@
                 </a>
               </div>
             </li>
-            <li class="col-3 col">
+            <li class="col-3 col col-sm-6">
               <div class="product-item">
                 <a class="product-link" href="#">
                   <img class="product-image" src="./assets/images/basic-slim-fit-tshirt.png"
@@ -274,7 +291,7 @@
                 </a>
               </div>
             </li>
-            <li class="col-3 col">
+            <li class="col-3 col col-sm-6">
               <div class="product-item">
                 <a class="product-link" href="#">
                   <img class="product-image" src="./assets/images/loose-textured-tshirt.png"
@@ -295,13 +312,13 @@
       <div class="overlay">
         <div class="container">
           <ul class="newsletter row">
-            <li class="col col-6">
+            <li class="col col-6 col-sm-12">
               <h4 class="newsletter-title">Subscribe to our newsletter andreceive exclusive offers every week</h4>
             </li>
-            <li class="col col-6">
-              <form class="flex-row">
+            <li class="col col-6 col-sm-12">
+              <form class="flex-row subscribe-form">
                 <input class="subscribe-input" type="email" name="email" placeholder="Enter your email">
-                <button class="subscribe-button btn">SUBSCRIBE</button>
+                  <button class="subscribe-button btn">SUBSCRIBE</button>
               </form>
             </li>
           </ul>
@@ -311,8 +328,8 @@
   </main>
   <footer class="footer">
     <div class="container">
-      <div class="infor-shop flex-row">
-        <div class="infor-shop-detail">
+      <div class="infor-shop row">
+        <div class="infor-shop-detail col col-4 col-sm-12">
           <h2 class="logo-footer">
             <a class="logo-link" href="#"><img class="logo-image" src="assets/images/eshop-logo.png" alt="E-shop"></a>
           </h2>
@@ -341,20 +358,18 @@
             </li>
           </ul>
         </div>
-        <ul class="infor-shop-group-list row">
-          <li class="infor-shop-group-item col col-4">
+        <ul class="infor-shop-group-list col col-8 col-sm-12 row">
+          <li class="infor-shop-group-item col col-4 col-sm-12">
             <p class="infor-shop-title">Shopping online</p>
             <ul class="infor-shop-list">
-              <li class="infor-shop-item"><a class="infor-shop-link" href="#">Order</a></li>
-              <li class="infor-shop-item"><a class="infor-shop-link" href="#">Status</a></li>
+              <li class="infor-shop-item"><a class="infor-shop-link" href="#">Order Status</a></li>
               <li class="infor-shop-item"><a class="infor-shop-link" href="#">Shipping and Delivery</a></li>
               <li class="infor-shop-item"><a class="infor-shop-link" href="#">Returns</a></li>
-              <li class="infor-shop-item"><a class="infor-shop-link" href="#">Payment</a></li>
-              <li class="infor-shop-item"><a class="infor-shop-link" href="#">Options</a></li>
+              <li class="infor-shop-item"><a class="infor-shop-link" href="#">Payment Options</a></li>
               <li class="infor-shop-item"><a class="infor-shop-link" href="#">Contact Us</a></li>
             </ul>
           </li>
-          <li class="infor-shop-group-item col col-4">
+          <li class="infor-shop-group-item col col-4 col-sm-12">
             <p class="infor-shop-title">Information</p>
             <ul class="infor-shop-list">
               <li class="infor-shop-item"><a class="infor-shop-link" href="#">Gift Cards</a></li>
@@ -364,7 +379,7 @@
               <li class="infor-shop-item"><a class="infor-shop-link" href="#">Site feedback</a></li>
             </ul>
           </li>
-          <li class="infor-shop-group-item col col-4">
+          <li class="infor-shop-group-item col col-4 col-sm-12">
             <p class="infor-shop-title">Contact</p>
             <ul class="infor-shop-list">
               <li class="infor-shop-item">store@uikit.com</li>
@@ -375,7 +390,7 @@
       </div>
     </div>
     <div class="copyright flex-row flex-center">
-      <p class="footer-copyright">DESIGN BY ICEO.CO - © 2019. ALL RIGHTS RESERVED.</p>
+      <p>DESIGN BY ICEO.CO - © 2019. ALL RIGHTS RESERVED.</p>
     </div>
   </footer>
 </body>

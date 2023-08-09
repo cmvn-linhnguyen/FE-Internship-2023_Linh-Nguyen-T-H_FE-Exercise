@@ -71,7 +71,7 @@ li {
     font-weight: 700;
 }
 
-.badge-danger{
+.badge-danger {
     background-color: #FF0000;
     color: #FFFFFF
 }
@@ -93,6 +93,10 @@ li {
 
 .col-6 {
     width: 50%;
+}
+
+.col-8 {
+    width: 67%;
 }
 
 .col {
