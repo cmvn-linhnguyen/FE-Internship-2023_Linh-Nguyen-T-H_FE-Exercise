@@ -184,7 +184,7 @@ header {
   background-size: cover;
 }
 
-.category-discount{
+.category-discount {
   left: 40px;
   top: 35%;
 }
@@ -360,4 +360,80 @@ header {
   padding: 24px 0px;
 
   border-top: 1px solid white;
+}
+
+@media only screen and (max-width: 768px) {
+  .container{
+    padding: 0px 24px;
+  }
+  .header {
+    display: none;
+  }
+
+  .section {
+    padding: 12px 0px;
+  }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .category-title {
+    font-size: 14px;
+    font-weight: 400;
+
+    left: 16px;
+  }
+
+  .btn {
+    padding: 3px 10px;
+
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  .category-link {
+    left: 16px;
+  }
+
+  .header-mobile{
+    display: block;
+  }
+
+  .section-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("./assets/images/mobile-banner.png");
+  }
+
+  .banner-infor-group {
+    padding-top: 30vh;
+    padding-left: 24px;
+  }
+
+  .banner-title {
+    font-size: 48px;
+  }
+
+  .banner-offers-list {
+    position: relative;
+    padding: 0;
+    display: none;
+  }
+
+  .category-item {
+    height: 224px;
+  }
+
+  .col-sm-12 {
+    width: 100%;
+  }
+
+  .col-sm-6 {
+    width: 50%;
+  }
+
+  .product-image {
+    height: 227px;
+  }
+
 }
