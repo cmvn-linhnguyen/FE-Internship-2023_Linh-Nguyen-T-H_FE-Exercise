@@ -4,103 +4,109 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E-Shop</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="common-style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="common-style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header fl-center">
-    <div class="container fl-row fl-space-between">
-      <h1 class="logo col-4">
-        <a class="logo-link" href="#"><img class="logo-image" src="assets/images/eshop-logo.png" alt="E-shop"></a>
-      </h1>
-      <nav class="header-nav col-4">
-        <ul class="nav-list fl-row fl-space-between">
-          <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Woman</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Kid</a></li>
+  <header class="header">
+    <div class="container">
+      <div class="flex-row flex-space-between row">
+        <h1 class="logo col col-4">
+          <a class="logo-link" href="#"><img class="logo-image" src="assets/images/eshop-logo.png" alt="E-shop"></a>
+        </h1>
+        <nav class="header-nav col col-4">
+          <ul class="nav-list flex-row flex-space-between">
+            <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Woman</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Kid</a></li>
+          </ul>
+        </nav>
+        <ul class="nav-icon-list flex-row col col-4">
+          <li class="nav-icon-item">
+            <a class="nav-icon-link" href="#"><img src="assets/icons/ic-search.svg" alt="Search Icon"></a>
+          </li>
+          <li class="nav-icon-item">
+            <a class="nav-icon-link" href="#"><img src="assets/icons/ic-cart.svg" alt="Cart Icon"></a>
+          </li>
+          <li class="nav-icon-item">
+            <a class="nav-icon-link" href="#"><img src="assets/icons/ic-avatar.svg" alt="Avatar Icon"></a>
+          </li>
         </ul>
-      </nav>
-      <ul class="nav-icon-list fl-row col-4">
-        <li class="nav-icon-item">
-          <a class="nav-icon-link" href="#"><img src="assets/icons/ic-search.svg" alt="Search Icon"></a>
-        </li>
-        <li class="nav-icon-item">
-          <a class="nav-icon-link" href="#"><img src="assets/icons/ic-cart.svg" alt="Cart Icon"></a>
-        </li>
-        <li class="nav-icon-item">
-          <a class="nav-icon-link" href="#"><img src="assets/icons/ic-avatar.svg" alt="Avatar Icon"></a>
-        </li>
-      </ul>
+      </div>
     </div>
   </header>
   <main>
     <section class="section section-banner">
       <div class="container">
-        <h2 class="banner-title">Sale of the <span style="color: #FBB03B;">summer</span> collection</h2>
-        <a class="shop-now-link fl-row " href="#">
-          <div class="shop-now-icon-wrapper">
-            <img class="shop-now-icon" src="assets/icons/ic-arrow.svg" alt="Shop now Icon">
-          </div>
-          <p class="shop-now-title">SHOP NOW</p>
-        </a>
-        <ul class="banner-offers-list fl-row">
-          <li class="banner-offer-item fl-row">
-            <div class="banner-offer-icon-wrapper fl-center"><img src="assets/icons/ic-free-shipping-1.svg"
-                alt="Free Shipping">
+        <div class="banner-infor-group">
+          <h2 class="banner-title">Sale of the <span class="text-secondary">summer</span> collection</h2>
+          <a class="shop-now-link flex-row" href="#">
+            <div class="shop-now-icon-wrapper flex-row flex-center">
+              <img class="shop-now-icon" src="assets/icons/ic-arrow.svg" alt="Shop now Icon">
             </div>
-            <div class="banner-offer-detail">
-              <h4 class="banner-offer-title">Free Shipping</h4>
-              <p class="banner-offer-description">On purchases over $199</p>
-            </div>
-          </li>
-          <li class="banner-offer-item fl-row">
-            <div class="banner-offer-icon-wrapper fl-center"><img src="assets/icons/ic-happy.svg"
-                alt="Satisfied Customers"></div>
-            <div class="banner-offer-detail">
-              <h4 class="banner-offer-title">99% Satisfied Customers</h4>
-              <p class="banner-offer-description">Our clients' opinions speak for themselves</p>
-            </div>
-          </li>
-          <li class="banner-offer-item fl-row">
-            <div class="banner-offer-icon-wrapper fl-center"><img src="assets/icons/ic-guarantee-1.svg"
-                alt="Originality Guaranteed">
-            </div>
-            <div class="banner-offer-detail">
-              <h4 class="banner-offer-title">Originality Guaranteed</h4>
-              <p class="banner-offer-description">30 days warranty for each product from our store</p>
-            </div>
-          </li>
-        </ul>
+            <p class="shop-now-title">SHOP NOW</p>
+          </a>
+        </div>
       </div>
+    </section>
+    <section class="section section-offers">
+      <ul class="banner-offers-list flex-row">
+        <li class="banner-offer-item flex-row">
+          <div class="banner-offer-icon-wrapper flex-row flex-center"><img src="assets/icons/ic-free-shipping-1.svg"
+              alt="Free Shipping">
+          </div>
+          <div class="banner-offer-detail">
+            <h4 class="banner-offer-title">Free Shipping</h4>
+            <p class="banner-offer-description">On purchases over $199</p>
+          </div>
+        </li>
+        <li class="banner-offer-item flex-row">
+          <div class="banner-offer-icon-wrapper flex-row flex-center"><img src="assets/icons/ic-happy.svg"
+              alt="Satisfied Customers"></div>
+          <div class="banner-offer-detail">
+            <h4 class="banner-offer-title">99% Satisfied Customers</h4>
+            <p class="banner-offer-description">Our clients' opinions speak for themselves</p>
+          </div>
+        </li>
+        <li class="banner-offer-item flex-row">
+          <div class="banner-offer-icon-wrapper flex-row flex-center"><img src="assets/icons/ic-guarantee-1.svg"
+              alt="Originality Guaranteed">
+          </div>
+          <div class="banner-offer-detail">
+            <h4 class="banner-offer-title">Originality Guaranteed</h4>
+            <p class="banner-offer-description">30 days warranty for each product from our store</p>
+          </div>
+        </li>
+      </ul>
     </section>
     <section class="section section-category">
       <div class="container">
-        <ul class="category-list fl-row">
-          <li class="col-6 col-padding">
-            <div class="category-item new-arrivals">
+        <ul class="category-list row">
+          <li class="col-6 col">
+            <div class="category-item">
               <div class="overlay">
                 <h4 class="category-title">New arrivals are now in!</h4>
-                <a class="category-link btn" href="#">SHOW COLLECTION</a>
+                <a class="btn category-link" href="#">SHOW COLLECTION</a>
               </div>
             </div>
           </li>
-          <li class="col-3 col-padding">
-            <div class="category-item tshirt-summer">
+          <li class="col-3 col">
+            <div class="category-item">
               <div class="overlay">
                 <h4 class="category-title">Basic t-shirts $29.99</h4>
-                <a class="category-link btn" href="#">MORE DETAILS</a>
+                <a class="btn category-link" href="#">MORE DETAILS</a>
               </div>
             </div>
           </li>
-          <li class="col-3 col-padding">
-            <div class="category-item summer-sale">
+          <li class="col-3 col">
+            <div class="category-item">
               <div class="overlay">
-                <span class="product-discount">-50%</span>
+                <span class="badge badge-danger category-discount">-50%</span>
                 <h4 class="category-title">Sale this summer</h4>
-                <a class="category-link btn" href="#">MORE DETAILS</a>
+                <a class="btn category-link" href="#">MORE DETAILS</a>
               </div>
             </div>
           </li>
@@ -109,54 +115,54 @@
     </section>
     <section class="section section-recommendation">
       <div class="container">
-        <div class="recommendation-header fl-space-between">
+        <div class="section-header flex-row flex-space-between">
           <h3 class="section-title">Selected just for you</h3>
-          <a class="recommendation-link btn" href="#">SHOW MORE</a>
+          <a class="btn recommendation-link" href="#">SHOW MORE</a>
         </div>
-        <ul class="product-list fl-space-between">
-          <li class="col-3 col-padding">
+        <ul class="product-list flex-row row">
+          <li class="col-3 col">
             <div class="product-item">
               <a class="product-link" href="#">
                 <img class="product-image" src="./assets/images/tshirt-summer-vibes.png" alt="T-Shirt Summer Vibes">
-                <span class="product-discount">-50%</span>
+                <span class="badge badge-danger product-discount@">-50%</span>
                 <h4 class="product-name">T-Shirt Summer Vibes</h4>
-                <div class="product-price-group fl-space-between">
+                <div class="product-price-group flex-row flex-space-between">
                   <p class="product-price discount-price">$89.99</p>
                   <p class="product-price original-price">$119.99</p>
                 </div>
               </a>
             </div>
           </li>
-          <li class="col-3 col-padding">
+          <li class="col-3 col">
             <div class="product-item">
               <a class="product-link" href="#">
                 <img class="product-image" src="./assets/images/loose-knit-3-4-sleeve.png" alt="Loose Knit 3/4 Sleeve">
                 <h4 class="product-name">Loose Knit 3/4 Sleeve</h4>
-                <div class="product-price-group fl-space-between">
+                <div class="product-price-group flex-space-between">
                   <p class="product-price">$119.99</p>
                   <p class="product-price original-price"></p>
                 </div>
               </a>
             </div>
           </li>
-          <li class="col-3 col-padding">
+          <li class="col-3 col">
             <div class="product-item">
               <a class="product-link" href="#">
                 <img class="product-image" src="./assets/images/basic-slim-fit-tshirt.png" alt="Basic Slim Fit T-Shirt">
                 <h4 class="product-name">Basic Slim Fit T-Shirt</h4>
-                <div class="product-price-group fl-space-between">
+                <div class="product-price-group flex-row flex-space-between">
                   <p class="product-price">$79.99</p>
                   <p class="product-price original-price"></p>
                 </div>
               </a>
             </div>
           </li>
-          <li class="col-3 col-padding">
+          <li class="col-3 col">
             <div class="product-item">
               <a class="product-link" href="#">
                 <img class="product-image" src="./assets/images/loose-textured-tshirt.png" alt="Loose Textured T-Shirt">
                 <h4 class="product-name">Loose Textured T-Shirt</h4>
-                <div class="product-price-group fl-space-between">
+                <div class="product-price-group flex-row flex-space-between">
                   <p class="product-price">$119.99</p>
                   <p class="product-price original-price"></p>
                 </div>
@@ -166,14 +172,15 @@
         </ul>
       </div>
     </section>
-    <section class="section section-services fl-row">
-      <div class="container fl-column">
-        <h3 class="section-title text-center">Why should you choose us?</h3>
-        <ul class="services-list fl-row">
-          <li class="col-3 col-padding">
+    <section class="section section-services flex-row">
+      <div class="container">
+        <h3 class="section-title section-title-center">Why should you choose us?</h3>
+        <ul class="services-list row">
+          <li class="col-3 col">
             <a class="services-item-link" href="#">
-              <div class="services-icon-wrapper fl-center"><img src="assets/icons/ic-free-shipping.svg"
-                  alt="Free Shipping">
+              <div class="services-icon-wrapper flex-row flex-center">
+                <img class="services-icon" src="assets/icons/ic-free-shipping.svg" alt="Free Shipping">
+                <img class="services-icon-hover" src="assets/icons/ic-free-shipping-hover.svg" alt="Free Shipping">
               </div>
               <div class="services-detail">
                 <h4 class="services-title">Free Shipping</h4>
@@ -182,9 +189,11 @@
               </div>
             </a>
           </li>
-          <li class="col-3 col-padding">
+          <li class="col-3 col">
             <a class="services-item-link" href="#">
-              <div class="services-icon-wrapper fl-center"><img src="assets/icons/ic-payment.svg" alt="Easy Payments">
+              <div class="services-icon-wrapper flex-row flex-center">
+                <img class="services-icon" src="assets/icons/ic-payment.svg" alt="Easy Payments">
+                <img class="services-icon-hover" src="assets/icons/ic-payment-hover.svg" alt="Easy Payments">
               </div>
               <div class="services-detail">
                 <h4 class="services-title">Easy Payments</h4>
@@ -192,10 +201,11 @@
               </div>
             </a>
           </li>
-          <li class="col-3 col-padding">
+          <li class="col-3 col">
             <a class="services-item-link" href="#">
-              <div class="services-icon-wrapper fl-center"><img src="assets/icons/ic-guarantee.svg"
-                  alt="Money-Back Guarantee">
+              <div class="services-icon-wrapper flex-row flex-center">
+                <img class="services-icon" src="assets/icons/ic-guarantee.svg" alt="Money-Back Guarantee">
+                <img class="services-icon-hover" src="assets/icons/ic-guarantee-hover.svg" alt="Money-Back Guarantee">
               </div>
               <div class="services-detail">
                 <h4 class="services-title">Money-Back Guarantee</h4>
@@ -204,10 +214,12 @@
               </div>
             </a>
           </li>
-          <li class="col-3 col-padding">
+          <li class="col-3 col">
             <a class="services-item-link" href="#">
-              <div class="services-icon-wrapper fl-center"><img src="assets/icons/ic-materials.svg"
-                  alt="Finest Quality"></div>
+              <div class="services-icon-wrapper flex-row flex-center">
+                <img class="services-icon" src="assets/icons/ic-materials.svg" alt="Finest Quality">
+                <img class="services-icon-hover" src="assets/icons/ic-materials-hover.svg" alt="Finest Quality">
+              </div>
               <div class="services-detail">
                 <h4 class="services-title">Finest Quality</h4>
                 <p class="services-description">Designed to last, each of our products hasbeen crafted with the finest
@@ -220,55 +232,55 @@
     </section>
     <section class="section section-products-today">
       <div class="container">
-        <div class="products-today fl-column">
-          <h3 class="section-title text-center">Products in today</h3>
-          <ul class="product-list fl-space-between">
-            <li class="col-3 col-padding">
+        <div class="products-today flex-column">
+          <h3 class="section-title section-title-center">Products in today</h3>
+          <ul class="product-list flex-row row">
+            <li class="col-3 col">
               <div class="product-item">
                 <a class="product-link" href="#">
                   <img class="product-image" src="./assets/images/tshirt-summer-vibes.png" alt="T-Shirt Summer Vibes">
-                  <span class="product-discount">-50%</span>
+                  <span class="badge badge-danger product-discount">-50%</span>
                   <h4 class="product-name">T-Shirt Summer Vibes</h4>
-                  <div class="product-price-group fl-space-between">
+                  <div class="product-price-group flex-row flex-space-between">
                     <p class="product-price discount-price">$89.99</p>
                     <p class="product-price original-price">$119.99</p>
                   </div>
                 </a>
               </div>
             </li>
-            <li class="col-3 col-padding">
+            <li class="col-3 col">
               <div class="product-item">
                 <a class="product-link" href="#">
                   <img class="product-image" src="./assets/images/loose-knit-3-4-sleeve.png"
                     alt="Loose Knit 3/4 Sleeve">
                   <h4 class="product-name">Loose Knit 3/4 Sleeve</h4>
-                  <div class="product-price-group fl-space-between">
+                  <div class="product-price-group flex-space-between">
                     <p class="product-price">$119.99</p>
                     <p class="product-price original-price"></p>
                   </div>
                 </a>
               </div>
             </li>
-            <li class="col-3 col-padding">
+            <li class="col-3 col">
               <div class="product-item">
                 <a class="product-link" href="#">
                   <img class="product-image" src="./assets/images/basic-slim-fit-tshirt.png"
                     alt="Basic Slim Fit T-Shirt">
                   <h4 class="product-name">Basic Slim Fit T-Shirt</h4>
-                  <div class="product-price-group fl-space-between">
+                  <div class="product-price-group flex-row flex-space-between">
                     <p class="product-price">$79.99</p>
                     <p class="product-price original-price"></p>
                   </div>
                 </a>
               </div>
             </li>
-            <li class="col-3 col-padding">
+            <li class="col-3 col">
               <div class="product-item">
                 <a class="product-link" href="#">
                   <img class="product-image" src="./assets/images/loose-textured-tshirt.png"
                     alt="Loose Textured T-Shirt">
                   <h4 class="product-name">Loose Textured T-Shirt</h4>
-                  <div class="product-price-group fl-space-between">
+                  <div class="product-price-group flex-row flex-space-between">
                     <p class="product-price">$119.99</p>
                     <p class="product-price original-price"></p>
                   </div>
@@ -281,26 +293,32 @@
     </section>
     <section class="section section-newsletter">
       <div class="overlay">
-        <div class="container newsletter fl-space-between">
-          <h4 class="newsletter-title">Subscribe to our newsletter andreceive exclusive offers every week</h4>
-          <form action="subscribe-form">
-            <input class="subscribe-input" type="email" name="email" placeholder="Enter your email">
-            <button class="subscribe-button btn">SUBSCRIBE</button>
-          </form>
+        <div class="container">
+          <ul class="newsletter row">
+            <li class="col col-6">
+              <h4 class="newsletter-title">Subscribe to our newsletter andreceive exclusive offers every week</h4>
+            </li>
+            <li class="col col-6">
+              <form class="flex-row">
+                <input class="subscribe-input" type="email" name="email" placeholder="Enter your email">
+                <button class="subscribe-button btn">SUBSCRIBE</button>
+              </form>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
   </main>
   <footer class="footer">
     <div class="container">
-      <div class="infor-shop fl-row">
+      <div class="infor-shop flex-row">
         <div class="infor-shop-detail">
           <h2 class="logo-footer">
             <a class="logo-link" href="#"><img class="logo-image" src="assets/images/eshop-logo.png" alt="E-shop"></a>
           </h2>
           <p class="shop-description">House My Brand designs clothing for the young, the old &everyone in between – but
             most importantly, for the fashionable</p>
-          <ul class="socical-list fl-row">
+          <ul class="socical-list flex-row">
             <li class="socical-item">
               <a href="socical-item-link"><img class="socical-icon" src="./assets/icons/ic-facebook.svg"
                   alt="Facebook Icon"></a>
@@ -323,8 +341,8 @@
             </li>
           </ul>
         </div>
-        <ul class="infor-shop-group-list fl-row">
-          <li class="infor-shop-group-item">
+        <ul class="infor-shop-group-list row">
+          <li class="infor-shop-group-item col col-4">
             <p class="infor-shop-title">Shopping online</p>
             <ul class="infor-shop-list">
               <li class="infor-shop-item"><a class="infor-shop-link" href="#">Order</a></li>
@@ -336,7 +354,7 @@
               <li class="infor-shop-item"><a class="infor-shop-link" href="#">Contact Us</a></li>
             </ul>
           </li>
-          <li class="infor-shop-group-item">
+          <li class="infor-shop-group-item col col-4">
             <p class="infor-shop-title">Information</p>
             <ul class="infor-shop-list">
               <li class="infor-shop-item"><a class="infor-shop-link" href="#">Gift Cards</a></li>
@@ -346,7 +364,7 @@
               <li class="infor-shop-item"><a class="infor-shop-link" href="#">Site feedback</a></li>
             </ul>
           </li>
-          <li class="infor-shop-group-item">
+          <li class="infor-shop-group-item col col-4">
             <p class="infor-shop-title">Contact</p>
             <ul class="infor-shop-list">
               <li class="infor-shop-item">store@uikit.com</li>
@@ -356,7 +374,7 @@
         </ul>
       </div>
     </div>
-    <div class="copyright fl-center">
+    <div class="copyright flex-row flex-center">
       <p class="footer-copyright">DESIGN BY ICEO.CO - © 2019. ALL RIGHTS RESERVED.</p>
     </div>
   </footer>
