@@ -83,6 +83,10 @@ li {
     flex-wrap: wrap;
 }
 
+.col {
+    padding: 10px;
+}
+
 .col-4 {
     width: 33%;
 }
@@ -97,10 +101,6 @@ li {
 
 .col-8 {
     width: 67%;
-}
-
-.col {
-    padding: 10px;
 }
 
 .overlay {
