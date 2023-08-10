@@ -1,0 +1,13 @@
+.nav {
+  &-list {
+  }
+
+  &-item {
+  }
+
+  &-link {
+    font-weight: map-get($font-weights, bold);
+
+    color: map-get($colors, primary);
+  }
+}

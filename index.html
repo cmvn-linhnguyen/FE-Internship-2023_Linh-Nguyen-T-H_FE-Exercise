@@ -1,259 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-Shop</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="common-style.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <div class="header-lg row">
-        <h1 class="logo col col-4">
-          <a class="logo-link" href="#"><img class="logo-image" src="assets/images/eshop-logo.png" alt="E-shop"></a>
-        </h1>
-        <nav class="header-nav col col-4">
-          <ul class="nav-list flex-row flex-space-between">
-            <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Woman</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Kid</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="common-style.css" />
+    <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="./stylesheet/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-lg row">
+          <h1 class="header-logo col col-4">
+            <a class="header-logo-link" href="#"
+              ><img
+                class="header-logo-image"
+                src="assets/images/eshop-logo.png"
+                alt="E-shop"
+            /></a>
+          </h1>
+          <nav class="nav col col-4">
+            <ul class="nav-list flex-row flex-space-between">
+              <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Woman</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Kid</a></li>
+            </ul>
+          </nav>
+          <ul class="header-icon-list flex-row col col-4">
+            <li class="header-icon-item">
+              <a class="header-icon-link" href="#"
+                ><img src="assets/icons/ic-search.svg" alt="Search Icon"
+              /></a>
+            </li>
+            <li class="header-icon-item">
+              <a class="header-icon-link" href="#"
+                ><img src="assets/icons/ic-cart.svg" alt="Cart Icon"
+              /></a>
+            </li>
+            <li class="header-icon-item">
+              <a class="header-icon-link" href="#"
+                ><img src="assets/icons/ic-avatar.svg" alt="Avatar Icon"
+              /></a>
+            </li>
           </ul>
-        </nav>
-        <ul class="nav-icon-list flex-row col col-4">
-          <li class="nav-icon-item">
-            <a class="nav-icon-link" href="#"><img src="assets/icons/ic-search.svg" alt="Search Icon"></a>
-          </li>
-          <li class="nav-icon-item">
-            <a class="nav-icon-link" href="#"><img src="assets/icons/ic-cart.svg" alt="Cart Icon"></a>
-          </li>
-          <li class="nav-icon-item">
-            <a class="nav-icon-link" href="#"><img src="assets/icons/ic-avatar.svg" alt="Avatar Icon"></a>
-          </li>
-        </ul>
-      </div>
-      <div class="header-sm row flex-center">
-        <h1 class="logo col col-sm-6">
-          <a class="logo-link" href="#"><img class="logo-image" src="assets/images/eshop-logo-black.png"
-              alt="E-shop"></a>
-        </h1>
-        <ul class="nav-icon-list flex-row col col-sm-6">
-          <li class="nav-icon-item">
-            <a class="nav-icon-link" href="#"><img src="assets/icons/ic-cart-black.svg" alt="Cart Icon"></a>
-          </li>
-          <li class="nav-icon-item">
-            <a class="nav-icon-link" href="#"><img src="assets/icons/ic-avatar-black.svg" alt="Avatar Icon"></a>
-          </li>
-          <li class="nav-icon-item">
-            <a class="nav-icon-link" href="#"><img src="assets/icons/ic-menu-black.svg" alt="Menu Icon"></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
-  <main>
-    <section class="section section-banner">
-      <div class="container">
-        <div class="banner-infor-group">
-          <h2 class="banner-title">Sale of the <span class="text-secondary">summer</span> collection</h2>
-          <a class="shop-now-link flex-row" href="#">
-            <div class="shop-now-icon-wrapper flex-row flex-center">
-              <img class="shop-now-icon" src="assets/icons/ic-arrow.svg" alt="Shop now Icon">
-            </div>
-            <p class="shop-now-title">SHOP NOW</p>
-          </a>
         </div>
-        <ul class="banner-offers-list flex-row">
-          <li class="banner-offer-item flex-row">
-            <div class="banner-offer-icon-wrapper flex-row flex-center"><img src="assets/icons/ic-free-shipping-1.svg"
-                alt="Free Shipping">
-            </div>
-            <div class="banner-offer-detail">
-              <h4 class="banner-offer-title">Free Shipping</h4>
-              <p class="banner-offer-description">On purchases over $199</p>
-            </div>
-          </li>
-          <li class="banner-offer-item flex-row">
-            <div class="banner-offer-icon-wrapper flex-row flex-center"><img src="assets/icons/ic-happy.svg"
-                alt="Satisfied Customers"></div>
-            <div class="banner-offer-detail">
-              <h4 class="banner-offer-title">99% Satisfied Customers</h4>
-              <p class="banner-offer-description">Our clients' opinions speak for themselves</p>
-            </div>
-          </li>
-          <li class="banner-offer-item flex-row">
-            <div class="banner-offer-icon-wrapper flex-row flex-center"><img src="assets/icons/ic-guarantee-1.svg"
-                alt="Originality Guaranteed">
-            </div>
-            <div class="banner-offer-detail">
-              <h4 class="banner-offer-title">Originality Guaranteed</h4>
-              <p class="banner-offer-description">30 days warranty for each product from our store</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="section section-category">
-      <div class="container">
-        <ul class="category-list row">
-          <li class="col col-6 col-sm-12">
-            <div class="category-item">
-              <div class="overlay">
-                <h4 class="category-title">New arrivals are now in!</h4>
-                <a class="btn category-link" href="#">SHOW COLLECTION</a>
-              </div>
-            </div>
-          </li>
-          <li class="col col-3 col-sm-6">
-            <div class="category-item">
-              <div class="overlay">
-                <h4 class="category-title">Basic t-shirts $29.99</h4>
-                <a class="btn category-link" href="#">MORE DETAILS</a>
-              </div>
-            </div>
-          </li>
-          <li class="col col-3 col-sm-6">
-            <div class="category-item">
-              <div class="overlay">
-                <span class="badge badge-danger category-discount">-50%</span>
-                <h4 class="category-title">Sale this summer</h4>
-                <a class="btn category-link" href="#">MORE DETAILS</a>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="section section-recommendation">
-      <div class="container">
-        <div class="section-header flex-row flex-space-between">
-          <h3 class="section-title">Selected just for you</h3>
-          <a class="btn recommendation-link" href="#">SHOW MORE</a>
+        <div class="header-sm row flex-center">
+          <h1 class="header-logo col col-sm-6">
+            <a class="header-logo-link" href="#"
+              ><img
+                class="header-logo-image"
+                src="assets/images/eshop-logo-black.png"
+                alt="E-shop"
+            /></a>
+          </h1>
+          <ul class="header-icon-list flex-row col col-sm-6">
+            <li class="header-icon-item">
+              <a class="header-icon-link" href="#"
+                ><img src="assets/icons/ic-cart-black.svg" alt="Cart Icon"
+              /></a>
+            </li>
+            <li class="header-icon-item">
+              <a class="header-icon-link" href="#"
+                ><img src="assets/icons/ic-avatar-black.svg" alt="Avatar Icon"
+              /></a>
+            </li>
+            <li class="header-icon-item">
+              <a class="header-icon-link" href="#"
+                ><img src="assets/icons/ic-menu-black.svg" alt="Menu Icon"
+              /></a>
+            </li>
+          </ul>
         </div>
-        <ul class="product-list flex-row row">
-          <li class="col col-3 col col-sm-6">
-            <div class="product-item">
-              <a class="product-link flex-column" href="#">
-                <img class="product-image" src="./assets/images/tshirt-summer-vibes.png" alt="T-Shirt Summer Vibes">
-                <span class="badge badge-danger product-discount">-50%</span>
-                <h4 class="product-name">T-Shirt Summer Vibes</h4>
-                <div class="product-price-group flex-row flex-space-between">
-                  <p class="product-price discount-price">$89.99</p>
-                  <p class="product-price original-price">$119.99</p>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li class="col col-3 col col-sm-6">
-            <div class="product-item">
-              <a class="product-link flex-column" href="#">
-                <img class="product-image" src="./assets/images/loose-knit-3-4-sleeve.png" alt="Loose Knit 3/4 Sleeve">
-                <h4 class="product-name">Loose Knit 3/4 Sleeve</h4>
-                <div class="product-price-group flex-space-between">
-                  <p class="product-price">$119.99</p>
-                  <p class="product-price original-price"></p>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li class="col col-3 col col-sm-6">
-            <div class="product-item">
-              <a class="product-link flex-column" href="#">
-                <img class="product-image" src="./assets/images/basic-slim-fit-tshirt.png" alt="Basic Slim Fit T-Shirt">
-                <h4 class="product-name">Basic Slim Fit T-Shirt</h4>
-                <div class="product-price-group flex-row flex-space-between">
-                  <p class="product-price">$79.99</p>
-                  <p class="product-price original-price"></p>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li class="col col-3 col col-sm-6">
-            <div class="product-item">
-              <a class="product-link flex-column" href="#">
-                <img class="product-image" src="./assets/images/loose-textured-tshirt.png" alt="Loose Textured T-Shirt">
-                <h4 class="product-name">Loose Textured T-Shirt</h4>
-                <div class="product-price-group flex-row flex-space-between">
-                  <p class="product-price">$119.99</p>
-                  <p class="product-price original-price"></p>
-                </div>
-              </a>
-            </div>
-          </li>
-        </ul>
       </div>
-    </section>
-    <section class="section section-services flex-row">
-      <div class="container">
-        <h3 class="section-header section-title section-title-center choose-us-title">Why should you choose us?</h3>
-        <ul class="services-list row">
-          <li class="col col-3 col-sm-12">
-            <a class="services-item-link" href="#">
-              <div class="services-icon-wrapper flex-row flex-center">
-                <img class="services-icon" src="assets/icons/ic-free-shipping.svg" alt="Free Shipping">
-                <img class="services-icon-hover" src="assets/icons/ic-free-shipping-hover.svg" alt="Free Shipping">
+    </header>
+    <main>
+      <section class="section section-banner">
+        <div class="container">
+          <div class="banner-content">
+            <h2 class="banner-title">
+              Sale of the <span class="text-secondary">summer</span> collection
+            </h2>
+            <a class="flex-row banner-link" href="#">
+              <div class="flex-row flex-center banner-icon-wrapper">
+                <img
+                  class="banner-icon"
+                  src="assets/icons/ic-arrow.svg"
+                  alt="Shop now Icon"
+                />
               </div>
-              <div class="services-detail">
-                <h4 class="services-title">Free Shipping</h4>
-                <p class="services-description">All purchases over $199 are eligible forfree shipping via USPS First
-                  Class Mail. </p>
-              </div>
+              <p class="banner-link-desc">SHOP NOW</p>
             </a>
-          </li>
-          <li class="col col-3 col-sm-12">
-            <a class="services-item-link" href="#">
-              <div class="services-icon-wrapper flex-row flex-center">
-                <img class="services-icon" src="assets/icons/ic-payment.svg" alt="Easy Payments">
-                <img class="services-icon-hover" src="assets/icons/ic-payment-hover.svg" alt="Easy Payments">
+          </div>
+          <ul class="banner-offer-list flex-row">
+            <li class="banner-offer-item flex-row">
+              <div class="banner-offer-icon-wrapper flex-row flex-center">
+                <img
+                  src="assets/icons/ic-free-shipping-1.svg"
+                  alt="Free Shipping"
+                />
               </div>
-              <div class="services-detail">
-                <h4 class="services-title">Easy Payments</h4>
-                <p class="services-description">All payments are processed instantlyover a secure payment protocol. </p>
+              <div class="banner-offer-detail">
+                <h4 class="banner-offer-title">Free Shipping</h4>
+                <p class="banner-offer-desc">On purchases over $199</p>
               </div>
-            </a>
-          </li>
-          <li class="col col-3 col-sm-12">
-            <a class="services-item-link" href="#">
-              <div class="services-icon-wrapper flex-row flex-center">
-                <img class="services-icon" src="assets/icons/ic-guarantee.svg" alt="Money-Back Guarantee">
-                <img class="services-icon-hover" src="assets/icons/ic-guarantee-hover.svg" alt="Money-Back Guarantee">
+            </li>
+            <li class="banner-offer-item flex-row">
+              <div class="banner-offer-icon-wrapper flex-row flex-center">
+                <img
+                  src="assets/icons/ic-happy.svg"
+                  alt="Satisfied Customers"
+                />
               </div>
-              <div class="services-detail">
-                <h4 class="services-title">Money-Back Guarantee</h4>
-                <p class="services-description">If an item arrived damaged or you'vechanged your mind, you can send
-                  itback for a full refund.</p>
+              <div class="banner-offer-detail">
+                <h4 class="banner-offer-title">99% Satisfied Customers</h4>
+                <p class="banner-offer-desc">
+                  Our clients' opinions speak for themselves
+                </p>
               </div>
-            </a>
-          </li>
-          <li class="col col-3 col-sm-12">
-            <a class="services-item-link" href="#">
-              <div class="services-icon-wrapper flex-row flex-center">
-                <img class="services-icon" src="assets/icons/ic-materials.svg" alt="Finest Quality">
-                <img class="services-icon-hover" src="assets/icons/ic-materials-hover.svg" alt="Finest Quality">
+            </li>
+            <li class="banner-offer-item flex-row">
+              <div class="banner-offer-icon-wrapper flex-row flex-center">
+                <img
+                  src="assets/icons/ic-guarantee-1.svg"
+                  alt="Originality Guaranteed"
+                />
               </div>
-              <div class="services-detail">
-                <h4 class="services-title">Finest Quality</h4>
-                <p class="services-description">Designed to last, each of our products hasbeen crafted with the finest
-                  materials.</p>
+              <div class="banner-offer-detail">
+                <h4 class="banner-offer-title">Originality Guaranteed</h4>
+                <p class="banner-offer-desc">
+                  30 days warranty for each product from our store
+                </p>
               </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="section section-products-today">
-      <div class="container">
-        <div class="products-today flex-column">
-          <h3 class="section-header section-title section-title-center">Products in today</h3>
-          <ul class="product-list flex-row row">
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section section-category">
+        <div class="container">
+          <ul class="category-list row">
+            <li class="col col-6 col-sm-12">
+              <div class="category-item">
+                <img
+                  class="category-item-image"
+                  src="./assets/images/new-arrivals.png"
+                  alt="New arrivals"
+                />
+                <div class="category-content">
+                  <h4 class="category-item-title">New arrivals are now in!</h4>
+                  <a class="btn category-item-link" href="#">SHOW COLLECTION</a>
+                </div>
+              </div>
+            </li>
             <li class="col col-3 col-sm-6">
+              <div class="category-item">
+                <img
+                  class="category-item-image"
+                  src="./assets/images/basic-tshirt.png"
+                  alt="New arrivals"
+                />
+                <div class="category-content">
+                  <h4 class="category-item-title">Basic t-shirts $29,99</h4>
+                  <a class="btn category-item-link" href="#">SHOW COLLECTION</a>
+                </div>
+              </div>
+            </li>
+            <li class="col col-3 col-sm-6">
+              <div class="category-item">
+                <img
+                  class="category-item-image"
+                  src="./assets/images/summer-sale.png"
+                  alt="New arrivals"
+                />
+                <div class="category-content">
+                  <!-- <span class="badge badge-danger category-discount">50%</span> -->
+                  <h4 class="category-item-title">Sale this summer</h4>
+                  <a class="btn category-item-link" href="#">SHOW COLLECTION</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section section-recommendation">
+        <div class="container">
+          <div class="section-header flex-row flex-space-between">
+            <h3 class="section-title">Selected just for you</h3>
+            <a class="btn recommendation-link" href="#">SHOW MORE</a>
+          </div>
+          <ul class="product-list flex-row row">
+            <li class="col col-3 col col-sm-6">
               <div class="product-item">
                 <a class="product-link flex-column" href="#">
-                  <img class="product-image" src="./assets/images/tshirt-summer-vibes.png" alt="T-Shirt Summer Vibes">
+                  <img
+                    class="product-image"
+                    src="./assets/images/tshirt-summer-vibes.png"
+                    alt="T-Shirt Summer Vibes"
+                  />
                   <span class="badge badge-danger product-discount">-50%</span>
                   <h4 class="product-name">T-Shirt Summer Vibes</h4>
                   <div class="product-price-group flex-row flex-space-between">
@@ -263,11 +212,14 @@
                 </a>
               </div>
             </li>
-            <li class="col col-3 col-sm-6">
+            <li class="col col-3 col col-sm-6">
               <div class="product-item">
                 <a class="product-link flex-column" href="#">
-                  <img class="product-image" src="./assets/images/loose-knit-3-4-sleeve.png"
-                    alt="Loose Knit 3/4 Sleeve">
+                  <img
+                    class="product-image"
+                    src="./assets/images/loose-knit-3-4-sleeve.png"
+                    alt="Loose Knit 3/4 Sleeve"
+                  />
                   <h4 class="product-name">Loose Knit 3/4 Sleeve</h4>
                   <div class="product-price-group flex-space-between">
                     <p class="product-price">$119.99</p>
@@ -276,11 +228,14 @@
                 </a>
               </div>
             </li>
-            <li class="col col-3 col-sm-6">
+            <li class="col col-3 col col-sm-6">
               <div class="product-item">
                 <a class="product-link flex-column" href="#">
-                  <img class="product-image" src="./assets/images/basic-slim-fit-tshirt.png"
-                    alt="Basic Slim Fit T-Shirt">
+                  <img
+                    class="product-image"
+                    src="./assets/images/basic-slim-fit-tshirt.png"
+                    alt="Basic Slim Fit T-Shirt"
+                  />
                   <h4 class="product-name">Basic Slim Fit T-Shirt</h4>
                   <div class="product-price-group flex-row flex-space-between">
                     <p class="product-price">$79.99</p>
@@ -289,11 +244,14 @@
                 </a>
               </div>
             </li>
-            <li class="col col-3 col-sm-6">
+            <li class="col col-3 col col-sm-6">
               <div class="product-item">
                 <a class="product-link flex-column" href="#">
-                  <img class="product-image" src="./assets/images/loose-textured-tshirt.png"
-                    alt="Loose Textured T-Shirt">
+                  <img
+                    class="product-image"
+                    src="./assets/images/loose-textured-tshirt.png"
+                    alt="Loose Textured T-Shirt"
+                  />
                   <h4 class="product-name">Loose Textured T-Shirt</h4>
                   <div class="product-price-group flex-row flex-space-between">
                     <p class="product-price">$119.99</p>
@@ -304,92 +262,333 @@
             </li>
           </ul>
         </div>
-      </div>
-    </section>
-    <section class="section section-newsletter">
-      <div class="overlay">
+      </section>
+      <section class="section section-services flex-row">
         <div class="container">
-          <ul class="newsletter row">
-            <li class="col col-6 col-sm-12">
-              <h4 class="newsletter-title">Subscribe to our newsletter andreceive exclusive offers every week</h4>
+          <h3
+            class="section-header section-title section-title-center choose-us-title"
+          >
+            Why should you choose us?
+          </h3>
+          <ul class="services-list row">
+            <li class="col col-3 col-sm-12">
+              <a class="services-item-link" href="#">
+                <div class="services-icon-wrapper flex-row flex-center">
+                  <img
+                    class="services-icon"
+                    src="assets/icons/ic-free-shipping.svg"
+                    alt="Free Shipping"
+                  />
+                  <img
+                    class="services-icon-hover"
+                    src="assets/icons/ic-free-shipping-hover.svg"
+                    alt="Free Shipping"
+                  />
+                </div>
+                <div class="services-detail">
+                  <h4 class="services-title">Free Shipping</h4>
+                  <p class="services-description">
+                    All purchases over $199 are eligible forfree shipping via
+                    USPS First Class Mail.
+                  </p>
+                </div>
+              </a>
             </li>
-            <li class="col col-6 col-sm-12">
-              <form class="flex-row subscribe-form">
-                <input class="subscribe-input" type="email" name="email" placeholder="Enter your email">
-                <button class="subscribe-button btn">SUBSCRIBE</button>
-              </form>
+            <li class="col col-3 col-sm-12">
+              <a class="services-item-link" href="#">
+                <div class="services-icon-wrapper flex-row flex-center">
+                  <img
+                    class="services-icon"
+                    src="assets/icons/ic-payment.svg"
+                    alt="Easy Payments"
+                  />
+                  <img
+                    class="services-icon-hover"
+                    src="assets/icons/ic-payment-hover.svg"
+                    alt="Easy Payments"
+                  />
+                </div>
+                <div class="services-detail">
+                  <h4 class="services-title">Easy Payments</h4>
+                  <p class="services-description">
+                    All payments are processed instantlyover a secure payment
+                    protocol.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="col col-3 col-sm-12">
+              <a class="services-item-link" href="#">
+                <div class="services-icon-wrapper flex-row flex-center">
+                  <img
+                    class="services-icon"
+                    src="assets/icons/ic-guarantee.svg"
+                    alt="Money-Back Guarantee"
+                  />
+                  <img
+                    class="services-icon-hover"
+                    src="assets/icons/ic-guarantee-hover.svg"
+                    alt="Money-Back Guarantee"
+                  />
+                </div>
+                <div class="services-detail">
+                  <h4 class="services-title">Money-Back Guarantee</h4>
+                  <p class="services-description">
+                    If an item arrived damaged or you'vechanged your mind, you
+                    can send itback for a full refund.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="col col-3 col-sm-12">
+              <a class="services-item-link" href="#">
+                <div class="services-icon-wrapper flex-row flex-center">
+                  <img
+                    class="services-icon"
+                    src="assets/icons/ic-materials.svg"
+                    alt="Finest Quality"
+                  />
+                  <img
+                    class="services-icon-hover"
+                    src="assets/icons/ic-materials-hover.svg"
+                    alt="Finest Quality"
+                  />
+                </div>
+                <div class="services-detail">
+                  <h4 class="services-title">Finest Quality</h4>
+                  <p class="services-description">
+                    Designed to last, each of our products hasbeen crafted with
+                    the finest materials.
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section section-products-today">
+        <div class="container">
+          <div class="products-today flex-column">
+            <h3 class="section-header section-title section-title-center">
+              Products in today
+            </h3>
+            <ul class="product-list flex-row row">
+              <li class="col col-3 col-sm-6">
+                <div class="product-item">
+                  <a class="product-link flex-column" href="#">
+                    <img
+                      class="product-image"
+                      src="./assets/images/tshirt-summer-vibes.png"
+                      alt="T-Shirt Summer Vibes"
+                    />
+                    <span class="badge badge-danger product-discount"
+                      >-50%</span
+                    >
+                    <h4 class="product-name">T-Shirt Summer Vibes</h4>
+                    <div
+                      class="product-price-group flex-row flex-space-between"
+                    >
+                      <p class="product-price discount-price">$89.99</p>
+                      <p class="product-price original-price">$119.99</p>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="col col-3 col-sm-6">
+                <div class="product-item">
+                  <a class="product-link flex-column" href="#">
+                    <img
+                      class="product-image"
+                      src="./assets/images/loose-knit-3-4-sleeve.png"
+                      alt="Loose Knit 3/4 Sleeve"
+                    />
+                    <h4 class="product-name">Loose Knit 3/4 Sleeve</h4>
+                    <div class="product-price-group flex-space-between">
+                      <p class="product-price">$119.99</p>
+                      <p class="product-price original-price"></p>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="col col-3 col-sm-6">
+                <div class="product-item">
+                  <a class="product-link flex-column" href="#">
+                    <img
+                      class="product-image"
+                      src="./assets/images/basic-slim-fit-tshirt.png"
+                      alt="Basic Slim Fit T-Shirt"
+                    />
+                    <h4 class="product-name">Basic Slim Fit T-Shirt</h4>
+                    <div
+                      class="product-price-group flex-row flex-space-between"
+                    >
+                      <p class="product-price">$79.99</p>
+                      <p class="product-price original-price"></p>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="col col-3 col-sm-6">
+                <div class="product-item">
+                  <a class="product-link flex-column" href="#">
+                    <img
+                      class="product-image"
+                      src="./assets/images/loose-textured-tshirt.png"
+                      alt="Loose Textured T-Shirt"
+                    />
+                    <h4 class="product-name">Loose Textured T-Shirt</h4>
+                    <div
+                      class="product-price-group flex-row flex-space-between"
+                    >
+                      <p class="product-price">$119.99</p>
+                      <p class="product-price original-price"></p>
+                    </div>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section section-newsletter">
+        <div class="overlay">
+          <div class="container">
+            <ul class="newsletter row">
+              <li class="col col-6 col-sm-12">
+                <h4 class="newsletter-title">
+                  Subscribe to our newsletter andreceive exclusive offers every
+                  week
+                </h4>
+              </li>
+              <li class="col col-6 col-sm-12">
+                <form class="flex-row subscribe-form">
+                  <input
+                    class="subscribe-input"
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email"
+                  />
+                  <button class="subscribe-button btn">SUBSCRIBE</button>
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="infor-shop row">
+          <div class="infor-shop-detail col col-4 col-sm-12">
+            <h2 class="logo-footer">
+              <a class="logo-link" href="#"
+                ><img
+                  class="logo-image"
+                  src="assets/images/eshop-logo.png"
+                  alt="E-shop"
+              /></a>
+            </h2>
+            <p class="shop-description">
+              House My Brand designs clothing for the young, the old &everyone
+              in between – but most importantly, for the fashionable
+            </p>
+            <ul class="socical-list flex-row">
+              <li class="socical-item">
+                <a href="socical-item-link"
+                  ><img
+                    class="socical-icon"
+                    src="./assets/icons/ic-facebook.svg"
+                    alt="Facebook Icon"
+                /></a>
+              </li>
+              <li class="socical-item">
+                <a href="socical-item-link"
+                  ><img
+                    class="socical-icon"
+                    src="./assets/icons/ic-twitter.svg"
+                    alt="Twitter Icon"
+                /></a>
+              </li>
+              <li class="socical-item">
+                <a href="socical-item-link"
+                  ><img
+                    class="socical-icon"
+                    src="./assets/icons/ic-linkedin.svg"
+                    alt="Linkedin Icon"
+                /></a>
+              </li>
+              <li class="socical-item">
+                <a href="socical-item-link"
+                  ><img
+                    class="socical-icon"
+                    src="./assets/icons/ic-instagram.svg"
+                    alt="Instagram Icon"
+                /></a>
+              </li>
+              <li class="socical-item">
+                <a href="socical-item-link">
+                  <img
+                    class="socical-icon"
+                    src="./assets/icons/ic-youtube.svg"
+                    alt="Youtube Icon"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <ul class="infor-shop-group-list col col-8 col-sm-12 row">
+            <li class="infor-shop-group-item col-4 col-sm-12">
+              <p class="infor-shop-title">Shopping online</p>
+              <ul class="infor-shop-list">
+                <li class="infor-shop-item">
+                  <a class="infor-shop-link" href="#">Order Status</a>
+                </li>
+                <li class="infor-shop-item">
+                  <a class="infor-shop-link" href="#">Shipping and Delivery</a>
+                </li>
+                <li class="infor-shop-item">
+                  <a class="infor-shop-link" href="#">Returns</a>
+                </li>
+                <li class="infor-shop-item">
+                  <a class="infor-shop-link" href="#">Payment Options</a>
+                </li>
+                <li class="infor-shop-item">
+                  <a class="infor-shop-link" href="#">Contact Us</a>
+                </li>
+              </ul>
+            </li>
+            <li class="infor-shop-group-item col col-4 col-sm-12">
+              <p class="infor-shop-title">Information</p>
+              <ul class="infor-shop-list">
+                <li class="infor-shop-item">
+                  <a class="infor-shop-link" href="#">Gift Cards</a>
+                </li>
+                <li class="infor-shop-item">
+                  <a class="infor-shop-link" href="#">Find a store</a>
+                </li>
+                <li class="infor-shop-item">
+                  <a class="infor-shop-link" href="#">Newsletter</a>
+                </li>
+                <li class="infor-shop-item">
+                  <a class="infor-shop-link" href="#">Become a member</a>
+                </li>
+                <li class="infor-shop-item">
+                  <a class="infor-shop-link" href="#">Site feedback</a>
+                </li>
+              </ul>
+            </li>
+            <li class="infor-shop-group-item col col-4 col-sm-12">
+              <p class="infor-shop-title">Contact</p>
+              <ul class="infor-shop-list">
+                <li class="infor-shop-item">store@uikit.com</li>
+                <li class="infor-shop-item">Hotline: +1 131 138 138</li>
+              </ul>
             </li>
           </ul>
         </div>
       </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="container">
-      <div class="infor-shop row">
-        <div class="infor-shop-detail col col-4 col-sm-12">
-          <h2 class="logo-footer">
-            <a class="logo-link" href="#"><img class="logo-image" src="assets/images/eshop-logo.png" alt="E-shop"></a>
-          </h2>
-          <p class="shop-description">House My Brand designs clothing for the young, the old &everyone in between – but
-            most importantly, for the fashionable</p>
-          <ul class="socical-list flex-row">
-            <li class="socical-item">
-              <a href="socical-item-link"><img class="socical-icon" src="./assets/icons/ic-facebook.svg"
-                  alt="Facebook Icon"></a>
-            </li>
-            <li class="socical-item">
-              <a href="socical-item-link"><img class="socical-icon" src="./assets/icons/ic-twitter.svg"
-                  alt="Twitter Icon"></a>
-            </li>
-            <li class="socical-item">
-              <a href="socical-item-link"><img class="socical-icon" src="./assets/icons/ic-linkedin.svg"
-                  alt="Linkedin Icon"></a>
-            </li>
-            <li class="socical-item">
-              <a href="socical-item-link"><img class="socical-icon" src="./assets/icons/ic-instagram.svg"
-                  alt="Instagram Icon"></a>
-            </li>
-            <li class="socical-item">
-              <a href="socical-item-link">
-                <img class="socical-icon" src="./assets/icons/ic-youtube.svg" alt="Youtube Icon"></a>
-            </li>
-          </ul>
-        </div>
-        <ul class="infor-shop-group-list col col-8 col-sm-12 row">
-          <li class="infor-shop-group-item col-4 col-sm-12">
-            <p class="infor-shop-title">Shopping online</p>
-            <ul class="infor-shop-list">
-              <li class="infor-shop-item"><a class="infor-shop-link" href="#">Order Status</a></li>
-              <li class="infor-shop-item"><a class="infor-shop-link" href="#">Shipping and Delivery</a></li>
-              <li class="infor-shop-item"><a class="infor-shop-link" href="#">Returns</a></li>
-              <li class="infor-shop-item"><a class="infor-shop-link" href="#">Payment Options</a></li>
-              <li class="infor-shop-item"><a class="infor-shop-link" href="#">Contact Us</a></li>
-            </ul>
-          </li>
-          <li class="infor-shop-group-item col col-4 col-sm-12">
-            <p class="infor-shop-title">Information</p>
-            <ul class="infor-shop-list">
-              <li class="infor-shop-item"><a class="infor-shop-link" href="#">Gift Cards</a></li>
-              <li class="infor-shop-item"><a class="infor-shop-link" href="#">Find a store</a></li>
-              <li class="infor-shop-item"><a class="infor-shop-link" href="#">Newsletter</a></li>
-              <li class="infor-shop-item"><a class="infor-shop-link" href="#">Become a member</a></li>
-              <li class="infor-shop-item"><a class="infor-shop-link" href="#">Site feedback</a></li>
-            </ul>
-          </li>
-          <li class="infor-shop-group-item col col-4 col-sm-12">
-            <p class="infor-shop-title">Contact</p>
-            <ul class="infor-shop-list">
-              <li class="infor-shop-item">store@uikit.com</li>
-              <li class="infor-shop-item">Hotline: +1 131 138 138</li>
-            </ul>
-          </li>
-        </ul>
+      <div class="copyright flex-row flex-center">
+        <p>DESIGN BY ICEO.CO - © 2019. ALL RIGHTS RESERVED.</p>
       </div>
-    </div>
-    <div class="copyright flex-row flex-center">
-      <p>DESIGN BY ICEO.CO - © 2019. ALL RIGHTS RESERVED.</p>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>

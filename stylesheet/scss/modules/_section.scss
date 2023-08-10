@@ -1,0 +1,14 @@
+.section {
+  position: relative;
+  &-header {
+  }
+
+  &-title {
+    font-size: map-get($font-sizes, large);
+    font-weight: map-get($font-weights, light);
+
+    &-center {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: map-get($colors, medium-small);
+  font-weight: map-get($font-weights, regular);
+  line-height: 1.5;
+}
+
+.container {
+  margin: 0 auto;
+
+  max-width: 1152px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 0 24px;
+  }
+}
