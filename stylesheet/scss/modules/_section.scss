@@ -1,5 +1,6 @@
 .section {
   position: relative;
+  width: 100%;
   &-header {
   }
 
@@ -9,6 +10,14 @@
 
     &-center {
       text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section {
+    &-title {
+      font-size: 18px;
     }
   }
 }

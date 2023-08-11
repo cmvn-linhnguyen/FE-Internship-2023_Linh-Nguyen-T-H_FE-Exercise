@@ -1,0 +1,22 @@
+.btn {
+  padding: 14px 18px;
+
+  border: none;
+  border-radius: 33px;
+
+  font-size: 13px;
+  font-weight: map-get($font-weights, bold);
+
+  background-color: map-get($colors, white);
+
+  &-outline {
+    border: 1px solid map-get($colors, lightGrey);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .btn {
+    padding: 2px 8px;
+    font-size: 10px;
+  }
+}
