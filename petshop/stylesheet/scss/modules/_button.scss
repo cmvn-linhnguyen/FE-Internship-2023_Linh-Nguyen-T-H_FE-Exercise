@@ -1,0 +1,16 @@
+.btn {
+  padding: 6px 18px;
+  border-radius: 50px;
+  font-weight: 500;
+
+  &.btn-primary {
+    border: none;
+    background: map-get($colors, primary);
+    color: map-get($colors, white);
+  }
+
+  &.btn-outline {
+    background-color: map-get($colors, white);
+    border: 1px solid map-get($colors, primary);
+  }
+}

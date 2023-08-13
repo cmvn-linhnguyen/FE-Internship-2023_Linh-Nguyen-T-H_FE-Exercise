@@ -4,18 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pet Shop</title>
+    <link rel="stylesheet" href="./stylesheet/css/style.css" />
   </head>
   <body>
     <header>
       <div class="container">
         <div class="heade d-flex flex-space-between">
-          <h1 class="logo">
-            <a class="logo-link" href="">
-              <img class="img logo-img" src="" alt="Pet Shop Logo" />
-            </a>
-          </h1>
-          <nav class="d-flex">
-            <ul class="nav-list">
+          <div>
+            <h1 class="logo">
+              <a class="logo-link" href="">
+                <img
+                  class="img logo-img"
+                  src="./assets/images/logo.png"
+                  alt="Pet Shop Logo"
+                />
+              </a>
+            </h1>
+          </div>
+          <nav>
+            <ul class="d-flex nav-list">
               <li class="nav-item">
                 <a class="nav-item-link" href="">Pets</a>
               </li>
@@ -33,10 +40,16 @@
               </li>
             </ul>
           </nav>
-          <a class="d-flex btn cart-link" href="">
-            <i class="cart-icon"></i>
-            Cart (0)
-          </a>
+          <div>
+            <a class="d-flex flex-center btn btn-outline cart-link" href="">
+              <img
+                class="icon"
+                src="./assets/icons/ic-cart.svg"
+                alt="Cart Icon"
+              />
+              Cart (0)
+            </a>
+          </div>
         </div>
       </div>
     </header>
@@ -51,7 +64,7 @@
               the 1500s, when an unknown printer took a galley of type and
               scrambled it to make a type specimen book.
             </p>
-            <a class="btn banner-btn" href="">SHOP NOW</a>
+            <a class="btn btn-primary banner-button" href="">SHOP NOW</a>
           </div>
         </div>
       </section>
@@ -60,36 +73,67 @@
         <div class="container">
           <div class="section-header">
             <h3 class="section-title">Shop By Category</h3>
+            <div class="section-title-underline"></div>
           </div>
-          <ul class="d-flex row row-col-5 category-list">
-            <li class="col category-item">
-              <a class="category" href="">
-                <img class="category-image" src="" alt="Cat Food" />
-                <h4 class="category-name">Cat Food</h4>
+          <ul class="d-flex category-list">
+            <li class="category-item">
+              <a class="category-link" href="">
+                <div class="category">
+                  <img
+                    class="img category-image"
+                    src="./assets/images/category.png"
+                    alt="Category Food"
+                  />
+                  <h4 class="category-name">Cat Food</h4>
+                </div>
               </a>
             </li>
-            <li class="col category-item">
-              <a class="category" href="">
-                <img class="category-image" src="" alt="Cat Food" />
-                <h4 class="category-name">Cat Food</h4>
+            <li class="category-item">
+              <a class="category-link" href="">
+                <div class="category">
+                  <img
+                    class="img category-image"
+                    src="./assets/images/category.png"
+                    alt="Category Food"
+                  />
+                  <h4 class="category-name">Cat Food</h4>
+                </div>
               </a>
             </li>
-            <li class="col category-item">
-              <a class="category" href="">
-                <img class="category-image" src="" alt="Cat Food" />
-                <h4 class="category-name">Cat Food</h4>
+            <li class="category-item">
+              <a class="category-link" href="">
+                <div class="category">
+                  <img
+                    class="img category-image"
+                    src="./assets/images/category.png"
+                    alt="Category Food"
+                  />
+                  <h4 class="category-name">Cat Food</h4>
+                </div>
               </a>
             </li>
-            <li class="col category-item">
-              <a class="category" href="">
-                <img class="category-image" src="" alt="Cat Food" />
-                <h4 class="category-name">Cat Food</h4>
+            <li class="category-item">
+              <a class="category-link" href="">
+                <div class="category">
+                  <img
+                    class="img category-image"
+                    src="./assets/images/category.png"
+                    alt="Category Food"
+                  />
+                  <h4 class="category-name">Cat Food</h4>
+                </div>
               </a>
             </li>
-            <li class="col category-item">
-              <a class="category" href="">
-                <img class="category-image" src="" alt="Cat Food" />
-                <h4 class="category-name">Cat Food</h4>
+            <li class="category-item">
+              <a class="category-link" href="">
+                <div class="category">
+                  <img
+                    class="img category-image"
+                    src="./assets/images/category.png"
+                    alt="Category Food"
+                  />
+                  <h4 class="category-name">Cat Food</h4>
+                </div>
               </a>
             </li>
           </ul>
@@ -100,45 +144,32 @@
         <div class="container">
           <div class="section-header">
             <h3 class="section-title">Trending Products</h3>
+            <div class="section-title-underline"></div>
           </div>
-          <div class="d-flex row trending-content">
+          <div class="row flex-center trending-content">
             <div class="col col-3 filter-wrapper">
-              <p class="filter-title">Filter</p>
+              <h4 class="filter-title">Filter</h4>
               <ul class="d-flex flex-column filter-list">
                 <li class="filter-item">
-                  <a class="filter-item-link" href="">
-                    <p class="filter-name">Accessories</p></a
-                  >
+                  <a class="filter-item-link" href=""> Accessories</a>
                 </li>
                 <li class="filter-item">
-                  <a class="filter-item-link" href="">
-                    <p class="filter-name">Accessories</p></a
-                  >
+                  <a class="filter-item-link" href=""> Accessories</a>
                 </li>
                 <li class="filter-item">
-                  <a class="filter-item-link" href="">
-                    <p class="filter-name">Accessories</p></a
-                  >
+                  <a class="filter-item-link" href=""> Accessories</a>
                 </li>
                 <li class="filter-item">
-                  <a class="filter-item-link" href="">
-                    <p class="filter-name">Accessories</p></a
-                  >
+                  <a class="filter-item-link" href=""> Accessories</a>
                 </li>
                 <li class="filter-item">
-                  <a class="filter-item-link" href="">
-                    <p class="filter-name">Accessories</p>
-                  </a>
+                  <a class="filter-item-link" href=""> Accessories </a>
                 </li>
                 <li class="filter-item">
-                  <a class="filter-item-link" href="">
-                    <p class="filter-name">Accessories</p></a
-                  >
+                  <a class="filter-item-link" href=""> Accessories</a>
                 </li>
                 <li class="filter-item">
-                  <a class="filter-item-link" href="">
-                    <p class="filter-name">Accessories</p></a
-                  >
+                  <a class="filter-item-link" href=""> Accessories</a>
                 </li>
               </ul>
             </div>
@@ -146,65 +177,117 @@
               <ul class="row product-list">
                 <li class="col col-6 product-item">
                   <a class="product-link" href="">
-                    <img class="product-image" src="" alt="Product Image" />
-                    <div class="product-detail">
-                      <h4 class="product-name">Lorem Ipsum passage</h4>
-                      <p class="product-desc">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry....
-                      </p>
-                      <p class="product-price">$ 120.00</p>
-                      <button class="product-button">
-                        <i class="cart-icon"></i>Add to cart
-                      </button>
+                    <div class="row flex-center product sold-out">
+                      <img
+                        class="col col-6 product-image"
+                        src="./assets/images/product.png"
+                        alt="Product Image"
+                      />
+                      <div class="col col-6 d-flex flex-column product-detail">
+                        <h4 class="product-name">Lorem Ipsum passage</h4>
+                        <p class="text-truncation product-desc">
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Vitae, itaque eius at quidem dicta nobis cumque
+                          dolorum odio ullam minima.
+                        </p>
+                        <p class="product-price">$ 120.00</p>
+                        <button
+                          class="d-flex flex-center btn btn-outline product-button"
+                        >
+                          <img
+                            class="img"
+                            src="./assets/icons/ic-cart2.svg"
+                            alt=""
+                          />Add to cart
+                        </button>
+                      </div>
                     </div>
                   </a>
                 </li>
                 <li class="col col-6 product-item">
                   <a class="product-link" href="">
-                    <img class="product-image" src="" alt="Product Image" />
-                    <div class="product-detail">
-                      <h4 class="product-name">Lorem Ipsum passage</h4>
-                      <p class="product-desc">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry....
-                      </p>
-                      <p class="product-price">$ 120.00</p>
-                      <button class="product-button">
-                        <i class="cart-icon"></i>Add to cart
-                      </button>
+                    <div class="row flex-center product">
+                      <img
+                        class="col col-6 product-image"
+                        src="./assets/images/product.png"
+                        alt="Product Image"
+                      />
+                      <div class="col col-6 d-flex flex-column product-detail">
+                        <h4 class="product-name">Lorem Ipsum passage</h4>
+                        <p class="text-truncation product-desc">
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Vitae, itaque eius at quidem dicta nobis cumque
+                          dolorum odio ullam minima.
+                        </p>
+                        <p class="product-price">$ 120.00</p>
+                        <button
+                          class="d-flex flex-center btn btn-outline product-button"
+                        >
+                          <img
+                            class="img"
+                            src="./assets/icons/ic-cart2.svg"
+                            alt=""
+                          />Add to cart
+                        </button>
+                      </div>
                     </div>
                   </a>
                 </li>
                 <li class="col col-6 product-item">
                   <a class="product-link" href="">
-                    <img class="product-image" src="" alt="Product Image" />
-                    <div class="product-detail">
-                      <h4 class="product-name">Lorem Ipsum passage</h4>
-                      <p class="product-desc">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry....
-                      </p>
-                      <p class="product-price">$ 120.00</p>
-                      <button class="product-button">
-                        <i class="cart-icon"></i>Add to cart
-                      </button>
+                    <div class="row flex-center product">
+                      <img
+                        class="col col-6 product-image"
+                        src="./assets/images/product.png"
+                        alt="Product Image"
+                      />
+                      <div class="col col-6 d-flex flex-column product-detail">
+                        <h4 class="product-name">Lorem Ipsum passage</h4>
+                        <p class="text-truncation product-desc">
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Vitae, itaque eius at quidem dicta nobis cumque
+                          dolorum odio ullam minima.
+                        </p>
+                        <p class="product-price">$ 120.00</p>
+                        <button
+                          class="d-flex flex-center btn btn-outline product-button"
+                        >
+                          <img
+                            class="img"
+                            src="./assets/icons/ic-cart2.svg"
+                            alt=""
+                          />Add to cart
+                        </button>
+                      </div>
                     </div>
                   </a>
                 </li>
                 <li class="col col-6 product-item">
                   <a class="product-link" href="">
-                    <img class="product-image" src="" alt="Product Image" />
-                    <div class="product-detail">
-                      <h4 class="product-name">Lorem Ipsum passage</h4>
-                      <p class="product-desc">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry....
-                      </p>
-                      <p class="product-price">$ 120.00</p>
-                      <button class="product-button">
-                        <i class="cart-icon"></i>Add to cart
-                      </button>
+                    <div class="row flex-center product">
+                      <img
+                        class="col col-6 product-image"
+                        src="./assets/images/product.png"
+                        alt="Product Image"
+                      />
+                      <div class="col col-6 d-flex flex-column product-detail">
+                        <h4 class="product-name">Lorem Ipsum passage</h4>
+                        <p class="text-truncation product-desc">
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Vitae, itaque eius at quidem dicta nobis cumque
+                          dolorum odio ullam minima.
+                        </p>
+                        <p class="product-price">$ 120.00</p>
+                        <button
+                          class="d-flex flex-center btn btn-outline product-button"
+                        >
+                          <img
+                            class="img"
+                            src="./assets/icons/ic-cart2.svg"
+                            alt=""
+                          />Add to cart
+                        </button>
+                      </div>
                     </div>
                   </a>
                 </li>
@@ -215,61 +298,122 @@
       </section>
 
       <section class="section gallery-section">
-        <div class="section-header">
-          <h3 class="section-title">Our Product Gallery</h3>
+        <div class="container">
+          <div class="section-header">
+            <h3 class="section-title">Our Product Gallery</h3>
+            <div class="section-title-underline"></div>
+          </div>
+          <ul class="d-flex gallery-list">
+            <li class="gallery-item">
+              <a class="gallery-link" href="">
+                <div class="d-flex flex-column gallery">
+                  <img
+                    class="img gallery-image"
+                    src="./assets/images/gallery.png"
+                    alt="Gallery Image"
+                  />
+                  <h4 class="gallery-name">Healthy Food</h4>
+                </div>
+              </a>
+            </li>
+            <li class="gallery-item">
+              <a class="gallery-link" href="">
+                <div class="d-flex flex-column gallery">
+                  <img
+                    class="img gallery-image"
+                    src="./assets/images/gallery.png"
+                    alt="Gallery Image"
+                  />
+                  <h4 class="gallery-name">Healthy Food</h4>
+                </div>
+              </a>
+            </li>
+            <li class="gallery-item">
+              <a class="gallery-link" href="">
+                <div class="d-flex flex-column gallery">
+                  <img
+                    class="img gallery-image"
+                    src="./assets/images/gallery.png"
+                    alt="Gallery Image"
+                  />
+                  <h4 class="gallery-name">Healthy Food</h4>
+                </div>
+              </a>
+            </li>
+            <li class="gallery-item">
+              <a class="gallery-link" href="">
+                <div class="d-flex flex-column gallery">
+                  <img
+                    class="img gallery-image"
+                    src="./assets/images/gallery.png"
+                    alt="Gallery Image"
+                  />
+                  <h4 class="gallery-name">Healthy Food</h4>
+                </div>
+              </a>
+            </li>
+            <li class="gallery-item">
+              <a class="gallery-link" href="">
+                <div class="d-flex flex-column gallery">
+                  <img
+                    class="img gallery-image"
+                    src="./assets/images/gallery.png"
+                    alt="Gallery Image"
+                  />
+                  <h4 class="gallery-name">Healthy Food</h4>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="d-flex row row-col-5 gallery-product-list">
-          <li class="col gallery-product-item">
-            <a class="gallery-product-link" href="">
-              <img class="gallery-product-image" src="" alt="Product Image" />
-              <h4 class="gallery-product-name">Healthy Food</h4>
-            </a>
-          </li>
-          <li class="col gallery-product-item">
-            <a class="gallery-product-link" href="">
-              <img class="gallery-product-image" src="" alt="Product Image" />
-              <h4 class="gallery-product-name">Healthy Food</h4>
-            </a>
-          </li>
-          <li class="col gallery-product-item">
-            <a class="gallery-product-link" href="">
-              <img class="gallery-product-image" src="" alt="Product Image" />
-              <h4 class="gallery-product-name">Healthy Food</h4>
-            </a>
-          </li>
-          <li class="col gallery-product-item">
-            <a class="gallery-product-link" href="">
-              <img class="gallery-product-image" src="" alt="Product Image" />
-              <h4 class="gallery-product-name">Healthy Food</h4>
-            </a>
-          </li>
-          <li class="col gallery-product-item">
-            <a class="gallery-product-link" href="">
-              <img class="gallery-product-image" src="" alt="Product Image" />
-              <h4 class="gallery-product-name">Healthy Food</h4>
-            </a>
-          </li>
-        </ul>
       </section>
     </main>
 
     <footer>
-      <div class="footer d-flex flex-column flex-center">
-        <h2 class="shop-name">PET SHOP</h2>
-        <div class="d-flex">
-          <i class="icon">Mail Icon</i>
-          <p class="shop-email">petshop@yeudongvat.vn</p>
-        </div>
-        <div class="d-flex">
-          <i class="icon">Phone Icon</i>
-          <p class="shop-phone">(+84) 0367574000 (Ms. Chu)</p>
-        </div>
-        <div class="d-flex">
-          <i class="icon">Address Icon</i>
-          <p class="shop-address">
-            Tầng 2 toà nhà Ricco, số 363 Nguyễn Hữu Thọ, Quận Cẩm lệ, Đà Nẵng,
-            Việt Nam
-          </p>
+      <div class="container">
+        <div class="d-flex flex-column flex-center">
+          <h2 class="shop-name">PET SHOP</h2>
+          <ul class="d-flex flex-column flex-center shop-info-list">
+            <li class="shop-info-item">
+              <a class="" href="">
+                <div class="d-flex">
+                  <img
+                    class="shop-info-icon"
+                    src="./assets/icons/ic-email.svg"
+                    alt="Email Icon"
+                  />
+                  <p class="shop-info-text" class="footer-info">
+                    petshop@yeudongvat.vn
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="shop-info-item">
+              <a class="" href="">
+                <div class="d-flex">
+                  <img
+                    class="shop-info-icon"
+                    src="./assets/icons/ic-phone.svg"
+                    alt="Phone Icon"
+                  />
+                  <p class="shop-info-text" class="footer-info">
+                    (+84) 0367574000 (Ms. Chu)
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="d-flex shop-address">
+            <img
+              class="shop-info-icon"
+              src="./assets/icons/ic-address.svg"
+              alt="Address Icon"
+            />
+            <p class="shop-info-text" class="footer-info">
+              Tầng 2 toà nhà Ricco, số 363 Nguyễn Hữu Thọ,<br />
+              Quận Cẩm lệ, Đà Nẵng, Việt Nam
+            </p>
+          </div>
         </div>
       </div>
     </footer>
