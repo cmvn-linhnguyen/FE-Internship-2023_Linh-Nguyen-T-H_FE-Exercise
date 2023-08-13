@@ -52,6 +52,7 @@ body {
   padding: 6px 18px;
   border-radius: 50px;
   font-weight: 500;
+  cursor: pointer;
 }
 .btn.btn-primary {
   border: none;
