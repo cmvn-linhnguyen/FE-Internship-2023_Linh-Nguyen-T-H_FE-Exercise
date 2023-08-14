@@ -6,7 +6,10 @@ Ex: ('23:30:29', 6000) => '01:10:29' */
 
 function findTime(str, number) {
   let totalSecond =
-    str.split(":")[0] + str.split(":")[1] + str.split(":")[2] + number;
+    parseInt(str.split(":")[0]) * 3600 +
+    parseInt(str.split(":")[1]) * 60 +
+    parseInt(str.split(":")[2]) +
+    number;
 
   let h = Math.floor(totalSecond / 3600);
   let m = Math.floor((totalSecond - 3600 * h) / 60);
