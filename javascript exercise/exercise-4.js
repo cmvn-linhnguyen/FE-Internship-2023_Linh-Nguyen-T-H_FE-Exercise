@@ -19,16 +19,14 @@ function randomArr(n, min, max) {
     );
   }
 
-  let arr = [];
-  let generatedValues = {};
+  let output = {};
 
-  while (arr.length < n) {
+  while (Object.keys(output).length < n) {
     let a = Math.floor(Math.random() * (max + 1 - min)) + min;
-    if (!generatedValues[a]) {
-      generatedValues[a] = a;
-      arr.push(a);
+    if (!output[a]) {
+      output[a] = a;
     }
   }
 
-  return arr;
+  return Object.values(output);
 }
