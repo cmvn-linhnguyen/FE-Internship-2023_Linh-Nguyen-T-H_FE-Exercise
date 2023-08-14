@@ -20,6 +20,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.2;
+  overflow-x: hidden;
   color: #333333;
 }
 
@@ -29,8 +30,8 @@ body {
 }
 
 .section {
-  position: relative;
   width: 100%;
+  position: relative;
 }
 .section-header {
   text-align: center;
@@ -99,9 +100,9 @@ body {
 }
 
 .row {
+  margin: -20px;
   display: flex;
   flex-wrap: wrap;
-  margin: -20px;
 }
 
 .col {
@@ -203,7 +204,6 @@ footer .shop-address {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  line-height: 1.5;
 }
 
 .text-truncation::after {
@@ -367,7 +367,7 @@ footer .shop-address {
 }
 .gallery-name {
   padding: 12px 18px;
-  display: inline-block;
+  align-self: center;
   border: 1px solid #ffc017;
   border-radius: 50px;
 }

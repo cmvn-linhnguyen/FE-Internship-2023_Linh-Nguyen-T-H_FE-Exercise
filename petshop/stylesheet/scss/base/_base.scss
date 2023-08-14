@@ -6,6 +6,7 @@ body {
   font-weight: 400;
   line-height: 1.2;
 
+  overflow-x: hidden;
   color: map-get($colors, gray100);
 }
 
