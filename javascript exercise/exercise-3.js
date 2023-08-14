@@ -3,11 +3,8 @@ Input: (string, number)
 Output: new string
 Ex: ('The quick brown fox jumps over the lazy dog', 4) => "The quick brown fox" */
 
-function truncateStr(str, number) {
-  let output = "";
-  for (let i = 0; i < number; i++) {
-    output += str.split(" ")[i] + " ";
-  }
-
-  return output.trim();
+function truncateStr(str, n) {
+  const words = str.split(" ");
+  const output = words.slice(0, n);
+  return output.join(" ");
 }

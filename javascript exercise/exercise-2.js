@@ -5,5 +5,7 @@ Ex: ("The quick brown fox jumps over the lazy dog", 'the') => 2
 Ex: ("The quick brown fox jumps over the lazy dog", 'fox') => 1 */
 
 function countOccurrence(str, subStr) {
-  return str.split(" ").filter((i) => i === subStr).length;
+  const regex = new RegExp(subStr, "gi");
+  const matches = str.match(regex);
+  return matches ? matches.length : 0;
 }

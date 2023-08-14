@@ -3,17 +3,32 @@ Input: (array length, min, max)
 Output: new array
 Ex: (4, 1, 10) => [3, 6, 1, 9] */
 
-function randomArr(arrLength, min, max) {
-  let output = [];
+/**
+ * Returns an array of n unique random integers in the specified range.
+ *
+ * @param {number} n The length of the desired array.
+ * @param {number} min The Minimum of the range.
+ * @param {number} max The Maximum of the range.
+ * @return {number[]} An array of n unique random integers in the specified range.
+ */
 
-  let i = 0;
-  while (i < arrLength) {
+function randomArr(n, min, max) {
+  if (n > max - min + 1) {
+    throw new Error(
+      "The range is too small to generate the desired array length."
+    );
+  }
+
+  let arr = [];
+  let generatedValues = {};
+
+  while (arr.length < n) {
     let a = Math.floor(Math.random() * (max + 1 - min)) + min;
-    if (!output.includes(a)) {
-      output.push(a);
-      i++;
+    if (!generatedValues[a]) {
+      generatedValues[a] = a;
+      arr.push(a);
     }
   }
 
-  return output;
+  return arr;
 }

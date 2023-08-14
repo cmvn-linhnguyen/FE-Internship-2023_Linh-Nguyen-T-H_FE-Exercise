@@ -4,10 +4,5 @@ Output: the new string
 Ex: ("FE", 4) => 'FEFEFEFE' */
 
 function repeatStr(str, times) {
-  let output = "";
-  for (let i = 0; i < times; i++) {
-    output += str;
-  }
-
-  return output;
+  return str.repeat(times);
 }
