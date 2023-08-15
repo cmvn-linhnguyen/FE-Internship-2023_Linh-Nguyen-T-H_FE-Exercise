@@ -1,0 +1,74 @@
+.section-shopinfor {
+  padding: 48px 0px;
+  background-color: map-get($colors, primary);
+}
+
+.shopinfor {
+  &-desc {
+    margin: 24px 0px 40px 0px;
+
+    max-width: 375px;
+
+    color: map-get($colors, white);
+  }
+}
+
+.grid {
+  &-list {
+  }
+  &-item {
+    &-title {
+      margin-bottom: 20px;
+
+      font-size: map-get($font-sizes, medium);
+      font-weight: map-get($font-weights, bold);
+
+      color: map-get($colors, white);
+    }
+  }
+}
+
+.links {
+  &-list,
+  &-item {
+    color: map-get($colors, white);
+    margin-bottom: 12px;
+
+    .link {
+      color: map-get($colors, white);
+    }
+  }
+}
+
+.social {
+  &-list {
+    align-items: center;
+  }
+  &-item {
+    margin-right: 20px;
+  }
+}
+
+.section-copyright {
+  padding: 24px 0px;
+
+  border-top: 1px solid white;
+
+  background-color: map-get($colors, primary);
+}
+
+.copyright {
+  &-text {
+    font-size: map-get($font-sizes, small);
+    font-style: italic;
+    color: map-get($colors, white);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .social {
+    &-list {
+      display: none;
+    }
+  }
+}

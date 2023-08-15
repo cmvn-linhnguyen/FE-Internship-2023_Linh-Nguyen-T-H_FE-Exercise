@@ -1,0 +1,6 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: map-get($font-sizes, medium-small);
+  font-weight: map-get($font-weights, regular);
+  line-height: 1.5;
+}

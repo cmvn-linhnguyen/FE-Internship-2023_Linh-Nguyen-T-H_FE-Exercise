@@ -1,0 +1,45 @@
+header {
+  padding: 24px 0px;
+
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+
+  background-color: transparent;
+
+  .header-lg {
+  }
+
+  .header-sm {
+    display: none;
+  }
+
+  .header {
+    &-icon {
+      &-list {
+        justify-content: flex-end;
+      }
+      &-item {
+        margin-left: 24px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    background-color: #ffffff;
+    padding: 16px 0px;
+
+    .header-lg {
+      display: none;
+    }
+
+    .header-sm {
+      display: flex;
+    }
+  }
+}

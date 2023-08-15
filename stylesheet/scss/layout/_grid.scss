@@ -1,0 +1,51 @@
+.flex-row {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: -10px;
+}
+
+.col {
+  padding: 10px;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: percentage(calc($i/12));
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .row {
+    margin: -4px;
+  }
+
+  .col {
+    padding: 4px;
+  }
+
+  @for $i from 1 through 12 {
+    .col-sm-#{$i} {
+      width: percentage(calc($i/12));
+    }
+  }
+}
