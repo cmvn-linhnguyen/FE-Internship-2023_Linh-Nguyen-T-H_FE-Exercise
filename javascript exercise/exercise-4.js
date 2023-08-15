@@ -24,9 +24,9 @@ function randomArr(n, min, max) {
   while (Object.keys(output).length < n) {
     let a = Math.floor(Math.random() * (max + 1 - min)) + min;
     if (!output[a]) {
-      output[a] = a;
+      output[a] = true;
     }
   }
 
-  return Object.values(output);
+  return Object.keys(output).map(Number);
 }

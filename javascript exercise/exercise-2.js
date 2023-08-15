@@ -17,3 +17,7 @@ function countOccurrence(str, subStr) {
   const matches = str.match(regex);
   return matches ? matches.length : 0;
 }
+
+function countOccurrence1(str, subStr) {
+  return str.split(subStr).length - 1;
+}
