@@ -41,6 +41,10 @@ body {
   line-height: 1.5;
 }
 
+.img {
+  display: block;
+}
+
 .section {
   position: relative;
   width: 100%;
@@ -226,7 +230,7 @@ body {
 header {
   padding: 24px 0px;
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 3;
@@ -240,6 +244,20 @@ header .header-icon-list {
 }
 header .header-icon-item {
   margin-left: 24px;
+}
+header #cart-wrapper {
+  position: relative;
+}
+header #cart-quantity {
+  position: absolute;
+  top: -18px;
+  left: -8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 12px;
+  background-color: #ff0000;
+  color: white;
+  font-weight: 400;
 }
 
 @media only screen and (max-width: 768px) {
@@ -425,10 +443,22 @@ header .header-icon-item {
 .product-item {
   position: relative;
 }
+.product-item .image-wrapper {
+  position: relative;
+}
 .product-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.product-item:hover {
+  scale: 1.03;
+}
+.product-item:hover .product-button {
+  display: block;
+}
+.product-link {
+  cursor: pointer;
 }
 .product-name {
   margin-top: 16px;
@@ -447,6 +477,23 @@ header .header-icon-item {
 }
 .product-price-discount {
   color: #ff0000;
+}
+.product-button {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 8px 20px;
+  border: 1px solid #fbb03b;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #fbb03b;
+  cursor: pointer;
+}
+.product-button:hover {
+  background-color: #fbb03b;
+  color: white;
 }
 
 .section-service {
