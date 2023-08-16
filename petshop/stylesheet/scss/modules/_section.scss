@@ -1,0 +1,22 @@
+.section {
+  width: 100%;
+  position: relative;
+
+  &-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &-title {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 16px;
+
+    &-underline {
+      width: 131px;
+      height: 2px;
+      background-color: map-get($colors, primary);
+      margin: 0 auto;
+    }
+  }
+}
