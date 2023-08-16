@@ -38,12 +38,12 @@ function updateCartQty() {
 //Add product to cart
 function addToCart(product) {
   var cart = JSON.parse(localStorage.getItem('cart')) || [];
-  var index = cart.findIndex((item) => item.id === product.id);
+  var cartItem = cart.find((item) => item.id === product.id);
 
-  if (index === -1) {
+  if (!cartItem) {
     cart.push({ ...product, quantity: 1 });
   } else {
-    cart[index].quantity += 1;
+    cartItem.quantity += 1;
   }
 
   localStorage.setItem('cart', JSON.stringify(cart));
