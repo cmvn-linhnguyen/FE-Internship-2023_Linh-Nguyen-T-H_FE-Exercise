@@ -9,16 +9,15 @@ export const updateCartQty = () => {
 
 //Add product to cart
 export const addToCart = (product) => {
-  // const cart = JSON.parse(localStorage.getItem('cart')) || [];
-  // const cartItem = cart.find((item) => item.id === product.id);
+  const cart = JSON.parse(localStorage.getItem('cart')) || [];
+  const cartItem = cart.find((item) => item.id === product.id);
 
-  // if (!cartItem) {
-  //   cart.push({ ...product, quantity: 1 });
-  // } else {
-  //   cartItem.quantity += 1;
-  // }
+  if (!cartItem) {
+    cart.push({ ...product, quantity: 1 });
+  } else {
+    cartItem.quantity += 1;
+  }
 
-  // localStorage.setItem('cart', JSON.stringify(cart));
-  // updateCartQty();
-  console.log(product.name);
+  localStorage.setItem('cart', JSON.stringify(cart));
+  updateCartQty();
 };
