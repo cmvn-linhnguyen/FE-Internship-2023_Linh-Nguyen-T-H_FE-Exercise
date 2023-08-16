@@ -93,6 +93,7 @@ body {
 .badge {
   padding: 6px 9px;
   position: absolute;
+  z-index: 2;
   border-radius: 20px;
 }
 .badge-danger {
@@ -474,6 +475,7 @@ header #cart-quantity {
 }
 .product-price-original {
   color: #c4c4c4;
+  text-decoration: line-through;
 }
 .product-price-discount {
   color: #ff0000;

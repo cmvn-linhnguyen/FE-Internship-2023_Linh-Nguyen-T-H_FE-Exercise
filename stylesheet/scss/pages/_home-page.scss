@@ -199,6 +199,7 @@
 
     &-original {
       color: map-get($colors, lightGrey);
+      text-decoration: line-through;
     }
 
     &-discount {

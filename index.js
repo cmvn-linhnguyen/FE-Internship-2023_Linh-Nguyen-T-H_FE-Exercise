@@ -35,6 +35,7 @@ function updateCartQty() {
   qtyElem.innerHTML = totalQty.toString();
 }
 
+//Add product to cart
 function addToCart(product) {
   var cart = JSON.parse(localStorage.getItem('cart')) || [];
   var index = cart.findIndex((item) => item.id === product.id);
@@ -47,6 +48,39 @@ function addToCart(product) {
 
   localStorage.setItem('cart', JSON.stringify(cart));
   updateCartQty();
+}
+
+//Render product price
+function renderProductPrice(price, discount) {
+  if (discount) {
+    var priceGroup = document.createElement('div');
+    priceGroup.setAttribute(
+      'class',
+      'product-price-group flex-row flex-space-between'
+    );
+
+    var discountedPrice = document.createElement('p');
+    discountedPrice.setAttribute(
+      'class',
+      'product-price product-price-discount'
+    );
+    discountedPrice.innerHTML = ((price * (100 - discount)) / 100).toFixed(2);
+
+    var originalPrice = document.createElement('p');
+    originalPrice.setAttribute('class', 'product-price product-price-original');
+    originalPrice.innerHTML = price;
+
+    priceGroup.appendChild(discountedPrice);
+    priceGroup.appendChild(originalPrice);
+
+    return priceGroup;
+  } else {
+    var productPrice = document.createElement('p');
+    productPrice.className = 'product-price';
+    productPrice.innerHTML = price;
+
+    return productPrice;
+  }
 }
 
 //Render list products
@@ -76,9 +110,14 @@ function renderProductList(products) {
     productName.className = 'product-name';
     productName.innerHTML = product.name;
 
-    var productPrice = document.createElement('p');
-    productPrice.className = 'product-price';
-    productPrice.innerHTML = product.price;
+    if (product.discount) {
+      var discountTag = document.createElement('span');
+      discountTag.setAttribute('class', 'badge badge-danger product-discount');
+      discountTag.innerHTML = '-' + product.discount + '%';
+      productItem.appendChild(discountTag);
+    }
+
+    var productPrice = renderProductPrice(product.price, product.discount);
 
     var addButton = document.createElement('button');
     addButton.className = 'product-button';
@@ -106,14 +145,14 @@ function renderProductList(products) {
 function displayProducts() {
   updateCartQty();
   var productList = renderProductList(products);
-
-  var productsWrap1 = document.getElementsByClassName('products-wrap')[0];
-  var productsWrap2 = document.getElementsByClassName('products-wrap')[1];
-
   var productListCopy = productList.cloneNode(true);
 
-  productsWrap1.appendChild(productList);
-  productsWrap2.appendChild(productListCopy);
+  var recommendationProducts =
+    document.getElementsByClassName('products-wrap')[0];
+  var ProductToday = document.getElementsByClassName('products-wrap')[1];
+
+  recommendationProducts.appendChild(productList);
+  ProductToday.appendChild(productListCopy);
 }
 
 displayProducts();
