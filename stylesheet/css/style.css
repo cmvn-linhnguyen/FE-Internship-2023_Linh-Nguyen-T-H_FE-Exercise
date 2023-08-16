@@ -20,10 +20,10 @@ input {
   border: none;
 }
 
-.category-item {
+.product-item:hover .image-wrapper, .category-item {
   position: relative;
 }
-.category-item::after {
+.product-item:hover .image-wrapper::after, .category-item::after {
   content: "";
   position: absolute;
   top: 0;
@@ -457,6 +457,7 @@ header #cart-quantity {
 }
 .product-item:hover .product-button {
   display: block;
+  z-index: 2;
 }
 .product-link {
   cursor: pointer;

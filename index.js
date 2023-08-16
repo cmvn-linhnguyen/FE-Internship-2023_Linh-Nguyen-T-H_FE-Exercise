@@ -64,11 +64,12 @@ function renderProductPrice(price, discount) {
       'class',
       'product-price product-price-discount'
     );
-    discountedPrice.innerHTML = ((price * (100 - discount)) / 100).toFixed(2);
+    discountedPrice.innerHTML =
+      '$' + ((price * (100 - discount)) / 100).toFixed(2);
 
     var originalPrice = document.createElement('p');
     originalPrice.setAttribute('class', 'product-price product-price-original');
-    originalPrice.innerHTML = price;
+    originalPrice.innerHTML = '$' + price;
 
     priceGroup.appendChild(discountedPrice);
     priceGroup.appendChild(originalPrice);
@@ -77,7 +78,7 @@ function renderProductPrice(price, discount) {
   } else {
     var productPrice = document.createElement('p');
     productPrice.className = 'product-price';
-    productPrice.innerHTML = price;
+    productPrice.innerHTML = '$' + price;
 
     return productPrice;
   }
