@@ -20,10 +20,10 @@ input {
   border: none;
 }
 
-.category-item {
+.product-item:hover .image-wrapper, .category-item {
   position: relative;
 }
-.category-item::after {
+.product-item:hover .image-wrapper::after, .category-item::after {
   content: "";
   position: absolute;
   top: 0;
@@ -39,6 +39,10 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
+}
+
+.img {
+  display: block;
 }
 
 .section {
@@ -89,6 +93,7 @@ body {
 .badge {
   padding: 6px 9px;
   position: absolute;
+  z-index: 2;
   border-radius: 20px;
 }
 .badge-danger {
@@ -226,7 +231,7 @@ body {
 header {
   padding: 24px 0px;
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 3;
@@ -240,6 +245,20 @@ header .header-icon-list {
 }
 header .header-icon-item {
   margin-left: 24px;
+}
+header #cart-wrapper {
+  position: relative;
+}
+header #cart-quantity {
+  position: absolute;
+  top: -18px;
+  left: -8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 12px;
+  background-color: #ff0000;
+  color: white;
+  font-weight: 400;
 }
 
 @media only screen and (max-width: 768px) {
@@ -318,7 +337,7 @@ header .header-icon-item {
   height: 740px;
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../../../assets/images/eshop-banner.png") no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
 }
 
 .banner-content {
@@ -425,10 +444,23 @@ header .header-icon-item {
 .product-item {
   position: relative;
 }
+.product-item .image-wrapper {
+  position: relative;
+}
 .product-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.product-item:hover {
+  scale: 1.03;
+}
+.product-item:hover .product-button {
+  display: block;
+  z-index: 2;
+}
+.product-link {
+  cursor: pointer;
 }
 .product-name {
   margin-top: 16px;
@@ -444,9 +476,27 @@ header .header-icon-item {
 }
 .product-price-original {
   color: #c4c4c4;
+  text-decoration: line-through;
 }
 .product-price-discount {
   color: #ff0000;
+}
+.product-button {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 8px 20px;
+  border: 1px solid #fbb03b;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #fbb03b;
+  cursor: pointer;
+}
+.product-button:hover {
+  background-color: #fbb03b;
+  color: white;
 }
 
 .section-service {

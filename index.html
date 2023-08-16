@@ -38,9 +38,12 @@
               /></a>
             </li>
             <li class="header-icon-item">
-              <a class="header-icon-link" href="#"
-                ><img src="assets/icons/ic-cart.svg" alt="Cart Icon"
-              /></a>
+              <a class="header-icon-link" id="cart-wrapper" href="#">
+                <img src="assets/icons/ic-cart.svg" alt="Cart Icon" />
+                <span class="flex-row flex-center" id="cart-quantity"
+                  >0</span
+                ></a
+              >
             </li>
             <li class="header-icon-item">
               <a class="header-icon-link" href="#"
@@ -148,7 +151,7 @@
             <li class="col col-6 col-sm-12">
               <div class="category-item">
                 <img
-                  class="category-item-image"
+                  class="img category-item-image"
                   src="./assets/images/new-arrivals.png"
                   alt="New arrivals"
                 />
@@ -159,7 +162,7 @@
             <li class="col col-3 col-sm-6">
               <div class="category-item">
                 <img
-                  class="category-item-image"
+                  class="img category-item-image"
                   src="./assets/images/basic-tshirt.png"
                   alt="New arrivals"
                 />
@@ -170,7 +173,7 @@
             <li class="col col-3 col-sm-6">
               <div class="category-item">
                 <img
-                  class="category-item-image"
+                  class="img category-item-image"
                   src="./assets/images/summer-sale.png"
                   alt="New arrivals"
                 />
@@ -185,80 +188,13 @@
         </div>
       </section>
       <section class="section section-recommendation">
-        <div class="container">
+        <div class="container products-wrap">
           <div
             class="section-header flex-row flex-space-between recommendation-title"
           >
             <h3 class="section-title">Selected just for you</h3>
             <a class="btn btn-outline" href="#">SHOW MORE</a>
           </div>
-          <ul class="product-list flex-row row">
-            <li class="col col-3 col-sm-6">
-              <div class="product-item">
-                <a class="product-link flex-column" href="#">
-                  <img
-                    class="product-image"
-                    src="./assets/images/tshirt-summer-vibes.png"
-                    alt="T-Shirt Summer Vibes"
-                  />
-                  <span class="badge badge-danger product-discount">-50%</span>
-                  <h4 class="product-name">T-Shirt Summer Vibes</h4>
-                  <div class="product-price-group flex-row flex-space-between">
-                    <p class="product-price product-price-discount">$89.99</p>
-                    <p class="product-price product-price-original">$119.99</p>
-                  </div>
-                </a>
-              </div>
-            </li>
-            <li class="col col-3 col col-sm-6">
-              <div class="product-item">
-                <a class="product-link flex-column" href="#">
-                  <img
-                    class="product-image"
-                    src="./assets/images/loose-knit-3-4-sleeve.png"
-                    alt="Loose Knit 3/4 Sleeve"
-                  />
-                  <h4 class="product-name">Loose Knit 3/4 Sleeve</h4>
-                  <div class="product-price-group flex-space-between">
-                    <p class="product-price">$119.99</p>
-                    <p class="product-price original-price"></p>
-                  </div>
-                </a>
-              </div>
-            </li>
-            <li class="col col-3 col col-sm-6">
-              <div class="product-item">
-                <a class="product-link flex-column" href="#">
-                  <img
-                    class="product-image"
-                    src="./assets/images/basic-slim-fit-tshirt.png"
-                    alt="Basic Slim Fit T-Shirt"
-                  />
-                  <h4 class="product-name">Basic Slim Fit T-Shirt</h4>
-                  <div class="product-price-group flex-row flex-space-between">
-                    <p class="product-price">$79.99</p>
-                    <p class="product-price original-price"></p>
-                  </div>
-                </a>
-              </div>
-            </li>
-            <li class="col col-3 col col-sm-6">
-              <div class="product-item">
-                <a class="product-link flex-column" href="#">
-                  <img
-                    class="product-image"
-                    src="./assets/images/loose-textured-tshirt.png"
-                    alt="Loose Textured T-Shirt"
-                  />
-                  <h4 class="product-name">Loose Textured T-Shirt</h4>
-                  <div class="product-price-group flex-row flex-space-between">
-                    <p class="product-price">$119.99</p>
-                    <p class="product-price original-price"></p>
-                  </div>
-                </a>
-              </div>
-            </li>
-          </ul>
         </div>
       </section>
       <section class="section section-service">
@@ -365,79 +301,12 @@
         </div>
       </section>
       <section class="section section-products-today">
-        <div class="container">
+        <div class="container products-wrap">
           <h3
             class="section-header section-title section-title-center products-today-header"
           >
             Products in today
           </h3>
-          <ul class="product-list flex-row row">
-            <li class="col col-3 col-sm-6">
-              <div class="product-item">
-                <a class="product-link flex-column" href="#">
-                  <img
-                    class="product-image"
-                    src="./assets/images/tshirt-summer-vibes.png"
-                    alt="T-Shirt Summer Vibes"
-                  />
-                  <span class="badge badge-danger product-discount">-50%</span>
-                  <h4 class="product-name">T-Shirt Summer Vibes</h4>
-                  <div class="product-price-group flex-row flex-space-between">
-                    <p class="product-price product-price-discount">$89.99</p>
-                    <p class="product-price product-price-original">$119.99</p>
-                  </div>
-                </a>
-              </div>
-            </li>
-            <li class="col col-3 col col-sm-6">
-              <div class="product-item">
-                <a class="product-link flex-column" href="#">
-                  <img
-                    class="product-image"
-                    src="./assets/images/loose-knit-3-4-sleeve.png"
-                    alt="Loose Knit 3/4 Sleeve"
-                  />
-                  <h4 class="product-name">Loose Knit 3/4 Sleeve</h4>
-                  <div class="product-price-group flex-space-between">
-                    <p class="product-price">$119.99</p>
-                    <p class="product-price original-price"></p>
-                  </div>
-                </a>
-              </div>
-            </li>
-            <li class="col col-3 col col-sm-6">
-              <div class="product-item">
-                <a class="product-link flex-column" href="#">
-                  <img
-                    class="product-image"
-                    src="./assets/images/basic-slim-fit-tshirt.png"
-                    alt="Basic Slim Fit T-Shirt"
-                  />
-                  <h4 class="product-name">Basic Slim Fit T-Shirt</h4>
-                  <div class="product-price-group flex-row flex-space-between">
-                    <p class="product-price">$79.99</p>
-                    <p class="product-price original-price"></p>
-                  </div>
-                </a>
-              </div>
-            </li>
-            <li class="col col-3 col col-sm-6">
-              <div class="product-item">
-                <a class="product-link flex-column" href="#">
-                  <img
-                    class="product-image"
-                    src="./assets/images/loose-textured-tshirt.png"
-                    alt="Loose Textured T-Shirt"
-                  />
-                  <h4 class="product-name">Loose Textured T-Shirt</h4>
-                  <div class="product-price-group flex-row flex-space-between">
-                    <p class="product-price">$119.99</p>
-                    <p class="product-price original-price"></p>
-                  </div>
-                </a>
-              </div>
-            </li>
-          </ul>
         </div>
       </section>
       <section class="section section-newsletter">
@@ -590,5 +459,6 @@
         </div>
       </section>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
