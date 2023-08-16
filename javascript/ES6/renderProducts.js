@@ -43,20 +43,15 @@ const renderProductList = (products) => {
       </li>`;
   });
 
+  const buttons = listItem.querySelectorAll('.product-button');
+  buttons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      addToCart(products[index]);
+    });
+  });
+
   return listItem;
 };
-
-function addEventClick(products) {
-  const buttons = document.getElementsByClassName('product-button');
-  for (let button of buttons) {
-    button.addEventListener('click', () => {
-      const product = products.find(
-        (item) => item.id === parseInt(button.id.split('-')[1])
-      );
-      addToCart(product);
-    });
-  }
-}
 
 // Display Products List
 export const displayProducts = (products) => {
@@ -68,6 +63,4 @@ export const displayProducts = (products) => {
     .getElementsByClassName('products-wrap')[0]
     .appendChild(productRecommendation);
   document.getElementsByClassName('products-wrap')[1].appendChild(productToday);
-
-  addEventClick(products);
 };
