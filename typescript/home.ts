@@ -2,13 +2,13 @@ import { ProductProps } from './product.interface.js';
 import { displayProducts } from './product.ui.js';
 
 const main = async () => {
-  const products: ProductProps[] = await fetch('./data.json')
-    .then((response) => response.json())
-    .then((json) => {
-      return json;
-    });
-
-  displayProducts(products);
+  try {
+    const response = await fetch('./data.json');
+    const products: ProductProps[] = await response.json();
+    displayProducts(products);
+  } catch (error) {
+    console.error('Error: ', error);
+  }
 };
 
 main();

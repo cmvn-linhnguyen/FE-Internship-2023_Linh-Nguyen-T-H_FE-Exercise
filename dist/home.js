@@ -9,11 +9,13 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 import { displayProducts } from './product.ui.js';
 const main = () => __awaiter(void 0, void 0, void 0, function* () {
-    const products = yield fetch('./data.json')
-        .then((response) => response.json())
-        .then((json) => {
-        return json;
-    });
-    displayProducts(products);
+    try {
+        const response = yield fetch('./data.json');
+        const products = yield response.json();
+        displayProducts(products);
+    }
+    catch (error) {
+        console.error('Error: ', error);
+    }
 });
 main();
