@@ -28,9 +28,11 @@ const renderTable = (cartItems) => {
       </td>
       <td class="col col-2">
         <div class="flex-row flex-center table-qty-wrap">
-          <button class="quantity-update decrease">-</button>
+          <button class="quantity-update decrease pro-${item.id}" ${
+      item.quantity === 1 ? `disabled` : ``
+    }>-</button>
           <p class="item-quantity">${item.quantity}</p>
-          <button class="quantity-update increase">+</button>
+          <button class="quantity-update increase pro-${item.id}">+</button>
         </div>
       </td>
       <td class="col col-2">
@@ -62,6 +64,14 @@ const renderTable = (cartItems) => {
         updateTotalPrice(cartItems);
         updateCartQty();
       }
+
+      if (quantity === 1) {
+        document
+          .querySelector(
+            `button.quantity-update.decrease.pro-${cartItems[index].id}`
+          )
+          .setAttribute('disabled', true);
+      }
     });
 
     increaseButton.addEventListener('click', () => {
@@ -75,6 +85,14 @@ const renderTable = (cartItems) => {
       updateLocalStorage(cartItems);
       updateTotalPrice(cartItems);
       updateCartQty();
+
+      if (quantity > 1) {
+        document
+          .querySelector(
+            `button.quantity-update.decrease.pro-${cartItems[index].id}`
+          )
+          .removeAttribute('disabled');
+      }
     });
 
     deleteButton.addEventListener('click', () => {
