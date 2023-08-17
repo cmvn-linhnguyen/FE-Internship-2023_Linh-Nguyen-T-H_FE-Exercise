@@ -1,9 +1,6 @@
-export interface CartItemProps {
-  id: number;
-  name: string;
-  image: string;
-  price: number;
-  discount?: number;
+import { ProductProps } from './product.interface';
+
+export interface CartItemProps extends Omit<ProductProps, 'status'> {
   quantity: number;
 }
 
