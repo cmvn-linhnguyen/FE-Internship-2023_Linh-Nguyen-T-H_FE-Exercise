@@ -1,4 +1,4 @@
-import { updateCartQty } from './cartEvent.js';
+import { addCartItemEvent, updateCartQty } from './cartEvent.js';
 
 const renderTable = (cartItems) => {
   const cartTable = document.createElement('table');
@@ -42,73 +42,9 @@ const renderTable = (cartItems) => {
   }
 
   cartTable.innerHTML = tableInnerHtml;
-
-  const tableRows = cartTable.querySelectorAll('.table-row');
-  tableRows.forEach((row, index) => {
-    const decreaseButton = row.querySelector('.decrease');
-    const increaseButton = row.querySelector('.increase');
-    const deleteButton = row.querySelector('.delete-button');
-    const quantityElement = row.querySelector('.item-quantity');
-    const priceElement = row.querySelector('.item-price');
-
-    decreaseButton.addEventListener('click', () => {
-      let quantity = parseInt(quantityElement.textContent);
-      if (quantity > 1) {
-        quantity--;
-        quantityElement.textContent = quantity;
-        priceElement.textContent = `$${(
-          quantity * cartItems[index].price
-        ).toFixed(2)}`;
-        cartItems[index].quantity = quantity;
-        updateLocalStorage(cartItems);
-        updateTotalPrice(cartItems);
-        updateCartQty();
-      }
-
-      if (quantity === 1) {
-        document
-          .querySelector(
-            `button.quantity-update.decrease.pro-${cartItems[index].id}`
-          )
-          .setAttribute('disabled', true);
-      }
-    });
-
-    increaseButton.addEventListener('click', () => {
-      let quantity = parseInt(quantityElement.textContent);
-      quantity++;
-      quantityElement.textContent = quantity;
-      priceElement.textContent = `$${(
-        quantity * cartItems[index].price
-      ).toFixed(2)}`;
-      cartItems[index].quantity = quantity;
-      updateLocalStorage(cartItems);
-      updateTotalPrice(cartItems);
-      updateCartQty();
-
-      if (quantity > 1) {
-        document
-          .querySelector(
-            `button.quantity-update.decrease.pro-${cartItems[index].id}`
-          )
-          .removeAttribute('disabled');
-      }
-    });
-
-    deleteButton.addEventListener('click', () => {
-      cartItems.splice(index, 1);
-      updateLocalStorage(cartItems);
-      updateTotalPrice(cartItems);
-      updateCartQty();
-      row.remove();
-    });
-  });
+  addCartItemEvent(cartTable, cartItems);
 
   return cartTable;
-};
-
-const updateLocalStorage = (cartItems) => {
-  localStorage.setItem('cart', JSON.stringify(cartItems));
 };
 
 const renderTotalPrice = (price) => {
@@ -119,14 +55,6 @@ const renderTotalPrice = (price) => {
   <p class="total-price">$${price}</p>`;
 
   return totalPriceWrap;
-};
-
-const updateTotalPrice = (carts) => {
-  let totalPriceElement = document.querySelector('.total-price');
-  const totalPrice = carts.reduce((sum, i) => {
-    return sum + i.price * i.quantity;
-  }, 0);
-  totalPriceElement.textContent = `$${totalPrice.toFixed(2)}`;
 };
 
 export const displayCartTable = (carts) => {
