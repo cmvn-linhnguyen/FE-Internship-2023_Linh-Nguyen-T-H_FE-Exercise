@@ -1,4 +1,4 @@
-import { addToCart, updateCartQty } from './cartEvent.js';
+import { addToCart, updateCartQuantity } from './cartEvent.js';
 
 const renderProductList = (products) => {
   let listItem = document.createElement('ul');
@@ -55,7 +55,7 @@ const renderProductList = (products) => {
 
 // Display Products List
 export const displayProducts = (products) => {
-  updateCartQty();
+  updateCartQuantity();
   const productRecommendation = renderProductList(products);
   const productToday = renderProductList(products);
 

@@ -1,4 +1,4 @@
-import { addToCart, updateCartQty } from './cart.event.js';
+import { addToCart, updateCartQuantity } from './cart.event.js';
 const renderProductList = (products) => {
     let listItem = document.createElement('ul');
     listItem.setAttribute('class', 'product-list flex-row row');
@@ -40,7 +40,7 @@ const renderProductList = (products) => {
     return listItem;
 };
 export const displayProducts = (products) => {
-    updateCartQty();
+    updateCartQuantity();
     const productRecommendation = renderProductList(products);
     const productToday = renderProductList(products);
     document

@@ -1,10 +1,10 @@
 //Count the number of products in the cart
-export const updateCartQty = () => {
-  const qtyElem = document.getElementById('cart-quantity');
+export const updateCartQuantity = () => {
+  const quantityElem = document.getElementById('cart-quantity');
   const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
 
-  const totalQty = cartItems.reduce((sum, item) => sum + item.quantity, 0);
-  qtyElem.innerHTML = totalQty.toString();
+  const totalQuantity = cartItems.reduce((sum, item) => sum + item.quantity, 0);
+  quantityElem.innerHTML = totalQuantity.toString();
 };
 
 //Add product to cart
@@ -19,7 +19,7 @@ export const addToCart = (product) => {
   }
 
   localStorage.setItem('cart', JSON.stringify(cart));
-  updateCartQty();
+  updateCartQuantity();
 };
 
 export const addCartItemEvent = (cartTable, cartItems) => {
@@ -61,7 +61,7 @@ export const addCartItemEvent = (cartTable, cartItems) => {
 const updateCartInfo = (cartItems) => {
   updateLocalStorage(cartItems);
   updateTotalPrice(cartItems);
-  updateCartQty();
+  updateCartQuantity();
 };
 
 const updateTotalPrice = (carts) => {

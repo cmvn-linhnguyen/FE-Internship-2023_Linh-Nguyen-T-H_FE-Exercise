@@ -1,8 +1,8 @@
-export const updateCartQty = () => {
-    const qtyElem = document.getElementById('cart-quantity');
+export const updateCartQuantity = () => {
+    const quantityElem = document.getElementById('cart-quantity');
     const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-    const totalQty = cartItems.reduce((sum, item) => sum + item.quantity, 0);
-    qtyElem.innerHTML = totalQty.toString();
+    const totalQuantity = cartItems.reduce((sum, item) => sum + item.quantity, 0);
+    quantityElem.innerHTML = totalQuantity.toString();
 };
 export const addToCart = (product) => {
     const carts = JSON.parse(localStorage.getItem('cart')) || [];
@@ -14,7 +14,7 @@ export const addToCart = (product) => {
         cartItem.quantity += 1;
     }
     localStorage.setItem('cart', JSON.stringify(carts));
-    updateCartQty();
+    updateCartQuantity();
 };
 export const addCartItemEvent = (cartTable, cartItems) => {
     const tableRows = cartTable.querySelectorAll('.table-row');
@@ -27,7 +27,10 @@ export const addCartItemEvent = (cartTable, cartItems) => {
         const updateQuantity = (change) => {
             let quantity = parseInt(quantityElement.textContent) + change;
             quantityElement.textContent = '' + quantity;
-            priceElement.textContent = `$${(quantity * cartItems[index].price).toFixed(2)}`;
+            priceElement.textContent = `Total: $${(cartItems[index].discount
+                ? quantity *
+                    ((cartItems[index].price * (100 - cartItems[index].discount)) / 100)
+                : quantity * cartItems[index].price).toFixed(2)}`;
             cartItems[index].quantity = quantity;
             updateCartInfo(cartItems);
             const decreaseButton = document.querySelector(`button.quantity-update.decrease.pro-${cartItems[index].id}`);
@@ -45,12 +48,15 @@ export const addCartItemEvent = (cartTable, cartItems) => {
 const updateCartInfo = (cartItems) => {
     updateLocalStorage(cartItems);
     updateTotalPrice(cartItems);
-    updateCartQty();
+    updateCartQuantity();
 };
 const updateTotalPrice = (carts) => {
     let totalPriceElement = document.querySelector('.total-price');
-    const totalPrice = carts.reduce((sum, i) => {
-        return sum + i.price * i.quantity;
+    const totalPrice = carts.reduce((sum, item) => {
+        const discountedPrice = item.discount
+            ? (item.quantity * (100 - item.discount) * item.price) / 100
+            : item.quantity * item.price;
+        return sum + discountedPrice;
     }, 0);
     totalPriceElement.textContent = `$${totalPrice.toFixed(2)}`;
 };

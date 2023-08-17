@@ -27,12 +27,12 @@ var products = [
 ];
 
 //Count the number of products in the cart
-function updateCartQty() {
-  var qtyElem = document.getElementById('cart-quantity');
+function updateCartQuantity() {
+  var quantityElem = document.getElementById('cart-quantity');
   var cartItems = JSON.parse(localStorage.getItem('cart')) || [];
 
-  var totalQty = cartItems.reduce((sum, item) => sum + item.quantity, 0);
-  qtyElem.innerHTML = totalQty.toString();
+  var totalQuantity = cartItems.reduce((sum, item) => sum + item.quantity, 0);
+  quantityElem.innerHTML = totalQuantity.toString();
 }
 
 //Add product to cart
@@ -47,7 +47,7 @@ function addToCart(product) {
   }
 
   localStorage.setItem('cart', JSON.stringify(cart));
-  updateCartQty();
+  updateCartQuantity();
 }
 
 //Render product price
@@ -144,7 +144,7 @@ function renderProductList(products) {
 }
 
 function displayProducts() {
-  updateCartQty();
+  updateCartQuantity();
   var productList = renderProductList(products);
   var productListCopy = productList.cloneNode(true);
 

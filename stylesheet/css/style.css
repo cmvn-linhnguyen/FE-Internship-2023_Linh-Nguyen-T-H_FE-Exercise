@@ -718,6 +718,20 @@ header #cart-quantity {
   padding: 16px 0px;
 }
 
+.discountedPrice {
+  color: #ff0000;
+}
+
+.originalPrice {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.item-price {
+  border-top: 1px solid gray;
+  font-size: 16px;
+}
+
 table {
   border-collapse: collapse;
   width: 100%;

@@ -1,4 +1,4 @@
-import { addToCart, updateCartQty } from './cart.event.js';
+import { addToCart, updateCartQuantity } from './cart.event.js';
 import { ProductProps } from './product.interface.js';
 
 const renderProductList = (products: ProductProps[]): HTMLUListElement => {
@@ -58,7 +58,7 @@ const renderProductList = (products: ProductProps[]): HTMLUListElement => {
 
 // Display Products List
 export const displayProducts = (products: ProductProps[]): void => {
-  updateCartQty();
+  updateCartQuantity();
   const productRecommendation = renderProductList(products);
   const productToday = renderProductList(products);
 

@@ -1,4 +1,4 @@
-import { addCartItemEvent, updateCartQty } from './cartEvent.js';
+import { addCartItemEvent, updateCartQuantity } from './cartEvent.js';
 
 const renderTable = (cartItems) => {
   const cartTable = document.createElement('table');
@@ -27,7 +27,7 @@ const renderTable = (cartItems) => {
         <p class="item-price">$${(item.price * item.quantity).toFixed(2)}</p>
       </td>
       <td class="col col-2">
-        <div class="flex-row flex-center table-qty-wrap">
+        <div class="flex-row flex-center table-quantity-wrap">
           <button class="quantity-update decrease pro-${item.id}" ${
       item.quantity === 1 ? `disabled` : ``
     }>-</button>
@@ -58,7 +58,7 @@ const renderTotalPrice = (price) => {
 };
 
 export const displayCartTable = (carts) => {
-  updateCartQty();
+  updateCartQuantity();
   const cartContent = document.getElementsByClassName(
     'section-cart-content'
   )[0];

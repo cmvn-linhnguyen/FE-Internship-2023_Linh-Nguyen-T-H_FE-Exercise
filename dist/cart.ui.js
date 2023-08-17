@@ -1,4 +1,4 @@
-import { addCartItemEvent, updateCartQty } from './cart.event.js';
+import { addCartItemEvent, updateCartQuantity } from './cart.event.js';
 const renderTable = (cartItems) => {
     const cartTable = document.createElement('table');
     cartTable.setAttribute('class', 'cart-table');
@@ -22,10 +22,23 @@ const renderTable = (cartItems) => {
         />
       </td>
       <td class="col col-2">
-        <p class="item-price">$${(item.price * item.quantity).toFixed(2)}</p>
+      ${item.discount
+            ? `<div class="discount">
+      <p class="discountedPrice">$${((item.price * (100 - item.discount)) /
+                100).toFixed(2)}</p>
+      <p class="originalPrice">$${item.price.toFixed(2)}</p>
+      </div>`
+            : `<p>$${item.price.toFixed(2)}</p>`}
+      <p class="item-price">
+      Total: $${(item.quantity *
+            (item.discount
+                ? ((100 - item.discount) * item.price) / 100
+                : item.price)).toFixed(2)}
+    </p>
+    
       </td>
       <td class="col col-2">
-        <div class="flex-row flex-center table-qty-wrap">
+        <div class="flex-row flex-center table-quantity-wrap">
           <button class="quantity-update decrease pro-${item.id}" ${item.quantity === 1 ? `disabled` : ``}>-</button>
           <p class="item-quantity">${item.quantity}</p>
           <button class="quantity-update increase pro-${item.id}">+</button>
@@ -49,11 +62,14 @@ const renderTotalPrice = (price) => {
     return totalPriceWrap;
 };
 export const displayCartTable = (carts) => {
-    updateCartQty();
+    updateCartQuantity();
     const cartContent = document.getElementsByClassName('section-cart-content')[0];
     const cartTable = renderTable(carts);
-    const totalPrice = carts.reduce((sum, i) => {
-        return sum + i.price * i.quantity;
+    const totalPrice = carts.reduce((sum, item) => {
+        const discountedPrice = item.discount
+            ? (item.quantity * (100 - item.discount) * item.price) / 100
+            : item.quantity * item.price;
+        return sum + discountedPrice;
     }, 0);
     const totalPriceElement = renderTotalPrice(+totalPrice.toFixed(2));
     cartContent.appendChild(cartTable);

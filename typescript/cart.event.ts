@@ -2,16 +2,16 @@ import { CartItemProps } from './cart.interface.js';
 import { ProductProps } from './product.interface.js';
 
 //Count the number of products in the cart
-export const updateCartQty = (): void => {
-  const qtyElem: HTMLElement = document.getElementById('cart-quantity');
+export const updateCartQuantity = (): void => {
+  const quantityElem: HTMLElement = document.getElementById('cart-quantity');
   const cartItems: CartItemProps[] =
     JSON.parse(localStorage.getItem('cart')) || [];
 
-  const totalQty: number = cartItems.reduce(
+  const totalQuantity: number = cartItems.reduce(
     (sum: number, item: CartItemProps) => sum + item.quantity,
     0
   );
-  qtyElem.innerHTML = totalQty.toString();
+  quantityElem.innerHTML = totalQuantity.toString();
 };
 
 //Add product to cart
@@ -29,7 +29,7 @@ export const addToCart = (product: ProductProps): void => {
   }
 
   localStorage.setItem('cart', JSON.stringify(carts));
-  updateCartQty();
+  updateCartQuantity();
 };
 
 export const addCartItemEvent = (
@@ -48,8 +48,10 @@ export const addCartItemEvent = (
       let quantity: number = parseInt(quantityElement.textContent) + change;
 
       quantityElement.textContent = '' + quantity;
-      priceElement.textContent = `$${(
-        quantity * cartItems[index].price
+      priceElement.textContent = `Total: $${(cartItems[index].discount
+        ? quantity *
+          ((cartItems[index].price * (100 - cartItems[index].discount)) / 100)
+        : quantity * cartItems[index].price
       ).toFixed(2)}`;
       cartItems[index].quantity = quantity;
       updateCartInfo(cartItems);
@@ -74,14 +76,19 @@ export const addCartItemEvent = (
 const updateCartInfo = (cartItems: CartItemProps[]): void => {
   updateLocalStorage(cartItems);
   updateTotalPrice(cartItems);
-  updateCartQty();
+  updateCartQuantity();
 };
 
 const updateTotalPrice = (carts: CartItemProps[]): void => {
   let totalPriceElement = document.querySelector('.total-price');
-  const totalPrice = carts.reduce((sum, i) => {
-    return sum + i.price * i.quantity;
+  const totalPrice = carts.reduce((sum, item) => {
+    const discountedPrice = item.discount
+      ? (item.quantity * (100 - item.discount) * item.price) / 100
+      : item.quantity * item.price;
+
+    return sum + discountedPrice;
   }, 0);
+
   totalPriceElement.textContent = `$${totalPrice.toFixed(2)}`;
 };
 
