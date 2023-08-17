@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheet/css/style.css" />
+  </head>
+  <body>
+    <header class="header-primary">
+      <div class="container">
+        <div class="header-lg row">
+          <h1 class="header-logo col col-4">
+            <a class="header-logo-link flex-row" href="./index.html"
+              ><img
+                class="header-logo-image"
+                src="assets/images/eshop-logo.png"
+                alt="E-shop"
+            /></a>
+          </h1>
+          <nav class="flex-row nav col col-4">
+            <ul class="nav-list flex-row flex-space-between">
+              <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Woman</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Kid</a></li>
+            </ul>
+          </nav>
+          <ul class="header-icon-list flex-row col col-4">
+            <li class="header-icon-item">
+              <a class="header-icon-link" href="#"
+                ><img src="assets/icons/ic-search.svg" alt="Search Icon"
+              /></a>
+            </li>
+            <li class="header-icon-item">
+              <a class="header-icon-link" id="cart-wrapper" href="./cart.html">
+                <img src="assets/icons/ic-cart.svg" alt="Cart Icon" />
+                <span class="flex-row flex-center" id="cart-quantity"
+                  >0</span
+                ></a
+              >
+            </li>
+            <li class="header-icon-item">
+              <a class="header-icon-link" href="#"
+                ><img src="assets/icons/ic-avatar.svg" alt="Avatar Icon"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-sm row flex-center">
+          <h1 class="header-logo col col-sm-6">
+            <a class="header-logo-link" href="#"
+              ><img
+                class="header-logo-image"
+                src="assets/images/eshop-logo-black.png"
+                alt="E-shop"
+            /></a>
+          </h1>
+          <ul class="header-icon-list flex-row col col-sm-6">
+            <li class="header-icon-item">
+              <a class="header-icon-link" href="#"
+                ><img src="assets/icons/ic-cart-black.svg" alt="Cart Icon"
+              /></a>
+            </li>
+            <li class="header-icon-item">
+              <a class="header-icon-link" href="#"
+                ><img src="assets/icons/ic-avatar-black.svg" alt="Avatar Icon"
+              /></a>
+            </li>
+            <li class="header-icon-item">
+              <a class="header-icon-link" href="#"
+                ><img src="assets/icons/ic-menu-black.svg" alt="Menu Icon"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section section-cart">
+        <div class="container">
+          <div class="container">
+            <h3 class="section-header section-title section-title-center">
+              Shopping cart
+            </h3>
+          </div>
+          <div class="section-cart-content"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="./javascript/ES6/cart.js" type="module"></script>
+</html>
