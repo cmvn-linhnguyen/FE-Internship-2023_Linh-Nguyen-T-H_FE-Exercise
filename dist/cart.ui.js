@@ -30,10 +30,7 @@ const renderTable = (cartItems) => {
       </div>`
             : `<p>$${item.price.toFixed(2)}</p>`}
       <p class="item-price">
-      Total: $${(item.quantity *
-            (item.discount
-                ? ((100 - item.discount) * item.price) / 100
-                : item.price)).toFixed(2)}
+      Total: $${item.calcSubTotal().toFixed(2)}
     </p>
     
       </td>
@@ -66,10 +63,7 @@ export const displayCartTable = (carts) => {
     const cartContent = document.getElementsByClassName('section-cart-content')[0];
     const cartTable = renderTable(carts);
     const totalPrice = carts.reduce((sum, item) => {
-        const discountedPrice = item.discount
-            ? (item.quantity * (100 - item.discount) * item.price) / 100
-            : item.quantity * item.price;
-        return sum + discountedPrice;
+        return sum + item.calcSubTotal();
     }, 0);
     const totalPriceElement = renderTotalPrice(+totalPrice.toFixed(2));
     cartContent.appendChild(cartTable);

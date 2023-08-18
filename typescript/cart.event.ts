@@ -48,12 +48,10 @@ export const addCartItemEvent = (
       let quantity: number = parseInt(quantityElement.textContent) + change;
 
       quantityElement.textContent = '' + quantity;
-      priceElement.textContent = `Total: $${(cartItems[index].discount
-        ? quantity *
-          ((cartItems[index].price * (100 - cartItems[index].discount)) / 100)
-        : quantity * cartItems[index].price
-      ).toFixed(2)}`;
       cartItems[index].quantity = quantity;
+      priceElement.textContent = `Total: $${cartItems[index]
+        .calcSubTotal()
+        .toFixed(2)}`;
       updateCartInfo(cartItems);
 
       const decreaseButton: HTMLButtonElement = document.querySelector(
