@@ -6,5 +6,6 @@ export class Product {
         this.price = price;
         this.discount = discount;
         this.status = status;
+        this.discountedPrice = (this.price * (100 - this.discount)) / 100;
     }
 }

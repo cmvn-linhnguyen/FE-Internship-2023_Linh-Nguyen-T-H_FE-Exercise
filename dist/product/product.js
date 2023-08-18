@@ -7,11 +7,15 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+import { Product } from './product.entity.js';
 import { displayProducts } from './product.ui.js';
 const main = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const response = yield fetch('./data.json');
-        const products = yield response.json();
+        const response = yield fetch('../data.json');
+        const data = yield response.json();
+        const products = data.map((item) => {
+            return new Product(item);
+        });
         displayProducts(products);
     }
     catch (error) {
