@@ -787,4 +787,16 @@ th {
   margin-bottom: 7px;
 }
 
+.section-cart-content .empty-image {
+  width: 300px;
+  object-fit: cover;
+}
+.section-cart-content .empty-text {
+  font-size: 16px;
+  margin: 12px 0px;
+}
+.section-cart-content .link {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=style.css.map */

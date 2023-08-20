@@ -1,4 +1,3 @@
-import { getCartItems } from '../utils/index.js';
 import { Cart, CartItem } from './cart.entity.js';
 
 export const renderTable = (cartItems: CartItem[]): HTMLTableElement => {
@@ -134,9 +133,28 @@ export const displayCartTable = (cartItems: CartItem[]): void => {
     'section-cart-content'
   )[0];
 
-  const cartTable = renderTable(cartItems);
+  if (cart.calcTotalProduct()) {
+    const cartTable = renderTable(cartItems);
 
-  const totalPriceElement = renderTotalPrice(cart.calcTotalPrice());
-  cartContent.appendChild(cartTable);
-  cartContent.appendChild(totalPriceElement);
+    const totalPriceElement = renderTotalPrice(cart.calcTotalPrice());
+    cartContent.appendChild(cartTable);
+    cartContent.appendChild(totalPriceElement);
+  } else {
+    const emptyImage = document.createElement('img');
+    emptyImage.setAttribute('class', 'empty-image');
+    emptyImage.setAttribute('src', './assets/images/empty.png');
+
+    const emptyText = document.createElement('p');
+    emptyText.setAttribute('class', 'empty-text');
+    emptyText.textContent = 'Empty';
+
+    const link = document.createElement('a');
+    link.setAttribute('class', 'link');
+    link.textContent = 'BACK HOME';
+    link.setAttribute('href', './index.html');
+
+    cartContent.appendChild(emptyImage);
+    cartContent.appendChild(emptyText);
+    cartContent.appendChild(link);
+  }
 };
