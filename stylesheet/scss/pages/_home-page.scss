@@ -160,6 +160,10 @@
     .image-wrapper {
       position: relative;
     }
+
+    .sold-out {
+      display: none;
+    }
   }
 
   &-image {
@@ -170,14 +174,30 @@
   }
 
   &-item {
-    &:hover {
-      scale: 1.03;
-      .product-button {
-        display: block;
-        z-index: 2;
+    &.available {
+      &:hover {
+        scale: 1.03;
+        .product-button {
+          display: block;
+          z-index: 2;
+        }
       }
+    }
+
+    &.out_of_stock {
       .image-wrapper {
         @extend %overlay;
+      }
+
+      .sold-out {
+        position: absolute;
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: map-get($colors, red);
+        color: white;
+        top: 50%;
+        left: 30%;
+        z-index: 3;
       }
     }
   }
