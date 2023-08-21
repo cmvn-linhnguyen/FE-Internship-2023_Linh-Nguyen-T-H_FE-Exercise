@@ -1,0 +1,10 @@
+.section {
+  &-header {
+    border-color: red;
+  }
+  &-title {
+    color: white;
+    font-weight: map-get($font-weights, bold);
+    font-size: map-get($font-sizes, '3xl');
+  }
+}

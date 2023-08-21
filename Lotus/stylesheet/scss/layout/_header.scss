@@ -1,0 +1,6 @@
+header {
+  padding: 16px 0px;
+
+  border-bottom: 1px solid map-get($colors, secondary);
+  background-color: map-get($colors, primary);
+}

@@ -1,0 +1,24 @@
+.text-center {
+  text-align: center;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-mark {
+  border-left: 2px solid map-get($colors, gray-f);
+  padding-left: 16px;
+  color: map-get($colors, black-a) !important;
+}
+
+.text-truncation {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.text-truncation::after {
+  content: ' ...';
+}

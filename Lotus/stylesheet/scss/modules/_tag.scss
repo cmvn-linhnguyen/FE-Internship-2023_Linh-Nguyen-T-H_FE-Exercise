@@ -1,0 +1,14 @@
+.tag {
+  padding: 2px 8px;
+
+  font-size: map-get($font-sizes, 'xs');
+  border-radius: 50px;
+
+  color: map-get($colors, black-a);
+  background-color: map-get($colors, light-gray);
+
+  &:hover {
+    color: map-get($colors, white-a);
+    background-color: map-get($colors, primary);
+  }
+}

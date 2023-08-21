@@ -1,0 +1,10 @@
+nav {
+  .nav-item {
+    margin-left: 32px;
+
+    .nav-link {
+      color: map-get($colors, black-b);
+      font-size: map-get($font-sizes, sm);
+    }
+  }
+}

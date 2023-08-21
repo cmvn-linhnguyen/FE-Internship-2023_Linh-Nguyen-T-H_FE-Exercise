@@ -1,0 +1,14 @@
+.btn {
+  padding: 12px 18px;
+  border-radius: 50px;
+  &.btn-primary {
+    font-size: map-get($font-sizes, sm);
+
+    background-color: map-get($colors, primary);
+    color: map-get($colors, white-a);
+  }
+  &.btn-secondary {
+    background-color: map-get($colors, secondary);
+    color: map-get($colors, white-a);
+  }
+}

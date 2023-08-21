@@ -1,0 +1,32 @@
+$font-sizes: (
+  '3xs': 8px,
+  '2xs': 10px,
+  'xs': 12px,
+  'sm': 14px,
+  'md': 16px,
+  'lg': 18px,
+  'xl': 20px,
+  '2xl': 22px,
+  '3xl': 24px,
+  '4xl': 48px,
+  '5xl': 50px,
+  '6xl': 85px,
+);
+
+$colors: (
+  'primary': #ffc017,
+  'secondary': #333,
+  'black-a': #485963,
+  'light-gray': #f2f2f2,
+  'medium-gray': #9ea0a8,
+  'dark-gray': #757575,
+  'white-a': #fff,
+);
+
+$size-base: 16px;
+
+$font-weights: (
+  'regular': 400,
+  'semi-bold': 600,
+  'bold': 600,
+);

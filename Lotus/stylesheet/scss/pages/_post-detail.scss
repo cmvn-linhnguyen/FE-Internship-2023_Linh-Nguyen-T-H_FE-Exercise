@@ -1,0 +1,112 @@
+.post-detail-header {
+  background-color: white;
+  border: none;
+}
+
+.post-detail.banner-section {
+  background: url('../../../../Lotus/assets/images/post-banner.png'),
+    lightgray -0.036px -123px / 100.005% 157.028% no-repeat;
+  background-size: cover;
+  height: 612px;
+  border: none;
+  padding: 0px;
+
+  .container {
+    max-width: 740px;
+  }
+
+  .post-title {
+    font-size: map-get($font-sizes, '5xl');
+    color: map-get($colors, white-a);
+  }
+
+  .banner-content-wrap {
+    padding: 51px 0px;
+    background: linear-gradient(360deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  .share-title {
+    font-size: map-get($font-sizes, 'sm');
+    margin-right: 14px;
+    color: map-get($colors, white-a);
+  }
+
+  .social-list {
+    gap: 12px;
+  }
+
+  .author {
+    &-avatar {
+      width: 40px;
+      height: 40px;
+
+      margin-right: 13px;
+      border-radius: 20px;
+    }
+    &-name {
+      font-size: map-get($font-sizes, 'sm');
+      font-weight: map-get($font-weights, semi-bold);
+      color: map-get($colors, white-a);
+      line-height: 1.5;
+    }
+  }
+
+  .post-time {
+    font-size: map-get($font-sizes, 'sm');
+    color: map-get($colors, white-a);
+    line-height: 1.5;
+  }
+}
+
+.post-content-section {
+  padding-top: 80px;
+
+  .container {
+    max-width: 740px;
+  }
+
+  figcaption {
+    font-size: map-get($font-sizes, 'md');
+    color: map-get($colors, medium-gray);
+  }
+
+  article {
+    margin-bottom: 60px;
+    font-size: map-get($font-sizes, 'lg');
+    color: map-get($colors, black-a);
+    line-height: 1.7;
+
+    gap: 32px;
+
+    & > h3 {
+      font-size: 32px;
+      font-weight: 600;
+      color: #1c1e20;
+    }
+
+    & > blockquote {
+      border-left: 4px solid #343a40;
+      padding-left: 20px;
+      color: #1c1e20;
+    }
+
+    & ul {
+      gap: 32px;
+    }
+    & li {
+      display: flex;
+      &::before {
+        content: '\2022';
+        margin: 0px 10px;
+      }
+    }
+  }
+
+  figure {
+    margin-bottom: 60px;
+  }
+}
+
+.recommendation-section {
+  padding: 80px 0px 100px 0px;
+}

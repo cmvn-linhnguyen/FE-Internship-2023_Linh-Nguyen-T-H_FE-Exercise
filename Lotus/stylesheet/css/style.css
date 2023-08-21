@@ -1,0 +1,433 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+li:last-child {
+  margin-right: 0 !important;
+}
+
+a {
+  color: #333;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  overflow-x: hidden;
+  line-height: 1.2;
+}
+
+body {
+  position: relative;
+}
+
+.img,
+.icon {
+  display: block;
+  object-fit: cover;
+}
+
+.btn {
+  padding: 12px 18px;
+  border-radius: 50px;
+}
+.btn.btn-primary {
+  font-size: 14px;
+  background-color: #ffc017;
+  color: #fff;
+}
+.btn.btn-secondary {
+  background-color: #333;
+  color: #fff;
+}
+
+.tag {
+  padding: 2px 8px;
+  font-size: 12px;
+  border-radius: 50px;
+  color: #485963;
+  background-color: #f2f2f2;
+}
+.tag:hover {
+  color: #fff;
+  background-color: #ffc017;
+}
+
+.section-header {
+  border-color: red;
+}
+.section-title {
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.post-card {
+  padding: 24px 20px;
+  border-radius: 7px;
+}
+.post-card:hover {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.post-card .post-header {
+  margin-bottom: 16px;
+}
+.post-card .post-info {
+  gap: 8px;
+}
+.post-card .post-date {
+  font-size: 14px;
+  color: #757575;
+}
+.post-card .post-title {
+  margin-bottom: 16px;
+  font-size: 22px;
+}
+.post-card .post-desc {
+  color: #485963;
+}
+.post-card .post-footer-wrap {
+  margin-top: 16px;
+}
+.post-card .reaction-list {
+  gap: 15px;
+}
+.post-card .reaction-button {
+  margin-right: 4px;
+  background-color: #fff;
+}
+.post-card .reaction-amount {
+  font-size: 12px;
+  color: #485963;
+}
+.post-card .author-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+}
+.post-card .author-name {
+  font-size: 14px;
+}
+.post-card .author-name::after {
+  content: " ·";
+  color: #757575;
+  margin-left: 4px;
+}
+
+.container {
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.col {
+  padding: 15px;
+}
+
+.col-1 {
+  width: 8.3333333333%;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.fd-column {
+  flex-direction: column;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.jc-end {
+  justify-content: flex-end;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.ai-end {
+  align-items: end;
+}
+
+nav .nav-item {
+  margin-left: 32px;
+}
+nav .nav-item .nav-link {
+  font-size: 14px;
+}
+
+header {
+  padding: 16px 0px;
+  border-bottom: 1px solid #333;
+  background-color: #ffc017;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-mark {
+  border-left: 2px solid;
+  padding-left: 16px;
+  color: #485963 !important;
+}
+
+.text-truncation {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.text-truncation::after {
+  content: " ...";
+}
+
+.banner-section {
+  padding: 16px 0px;
+  background-color: #ffc017;
+  border-bottom: 1px solid #333;
+}
+
+.banner-title {
+  margin-bottom: 60px;
+  font-size: 85px;
+  font-weight: 600;
+}
+.banner-desc {
+  max-width: 655px;
+  font-size: 24px;
+}
+.banner-image {
+  width: 40%;
+}
+
+.content-section {
+  padding-top: 40px;
+}
+
+.content-wrap.row {
+  margin: -75px;
+}
+
+.post-section.col,
+.aside.col {
+  padding: 75px;
+}
+
+.post-item {
+  margin-bottom: 20px;
+}
+
+.tag-list {
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.aside-group-title {
+  margin-bottom: 16px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.aside-line {
+  width: 100%;
+  height: 1px;
+  margin: 24px 0px;
+  background-color: #e6e6e6;
+}
+
+.social-list {
+  gap: 8px;
+}
+
+.social-icon-wrap {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: #ffc017;
+}
+
+.post-detail-header {
+  background-color: white;
+  border: none;
+}
+
+.post-detail.banner-section {
+  background: url("../../../../Lotus/assets/images/post-banner.png"), lightgray -0.036px -123px/100.005% 157.028% no-repeat;
+  background-size: cover;
+  height: 612px;
+  border: none;
+  padding: 0px;
+}
+.post-detail.banner-section .container {
+  max-width: 740px;
+}
+.post-detail.banner-section .post-title {
+  font-size: 50px;
+  color: #fff;
+}
+.post-detail.banner-section .banner-content-wrap {
+  padding: 51px 0px;
+  background: linear-gradient(360deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+}
+.post-detail.banner-section .share-title {
+  font-size: 14px;
+  margin-right: 14px;
+  color: #fff;
+}
+.post-detail.banner-section .social-list {
+  gap: 12px;
+}
+.post-detail.banner-section .author-avatar {
+  width: 40px;
+  height: 40px;
+  margin-right: 13px;
+  border-radius: 20px;
+}
+.post-detail.banner-section .author-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.5;
+}
+.post-detail.banner-section .post-time {
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.post-content-section {
+  padding-top: 80px;
+}
+.post-content-section .container {
+  max-width: 740px;
+}
+.post-content-section figcaption {
+  font-size: 16px;
+  color: #9ea0a8;
+}
+.post-content-section article {
+  margin-bottom: 60px;
+  font-size: 18px;
+  color: #485963;
+  line-height: 1.7;
+  gap: 32px;
+}
+.post-content-section article > h3 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #1c1e20;
+}
+.post-content-section article > blockquote {
+  border-left: 4px solid #343a40;
+  padding-left: 20px;
+  color: #1c1e20;
+}
+.post-content-section article ul {
+  gap: 32px;
+}
+.post-content-section article li {
+  display: flex;
+}
+.post-content-section article li::before {
+  content: "•";
+  margin: 0px 10px;
+}
+.post-content-section figure {
+  margin-bottom: 60px;
+}
+
+.recommendation-section {
+  padding: 80px 0px 100px 0px;
+}
+
+/*# sourceMappingURL=style.css.map */

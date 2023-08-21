@@ -1,0 +1,23 @@
+.container {
+  max-width: 1220px;
+  width: 100%;
+
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: -15px;
+}
+
+.col {
+  padding: 15px;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: percentage(calc($i/12));
+  }
+}
